@@ -27,7 +27,8 @@ export const theme = extendTheme({
         color: 'gray.50'
       },
       html: {
-        scrollBehavior: 'smooth'
+        scrollBehavior: 'smooth',
+        webkitFontSmoothing: 'antialiased'
       }
     }
   }

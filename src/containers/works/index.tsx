@@ -1,7 +1,15 @@
 import { Flex, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 import WorksCaroussel from '~/components/Caroussel/works'
+import translates from '~/locales'
 
 export const Works = () => {
+  const router = useRouter()
+
+  const { locale } = router
+  const { en, es, pt } = translates
+  const t = locale === 'es' ? es : locale === 'en' ? en : pt
+
   return (
     <Flex
       id="works"
@@ -19,7 +27,7 @@ export const Works = () => {
         py={['1rem', '2rem']}
         px={['1rem', '1.5rem', '2.5rem']}
       >
-        Trabalhos realizados
+        {t.works.title}
       </Text>
       <WorksCaroussel />
     </Flex>

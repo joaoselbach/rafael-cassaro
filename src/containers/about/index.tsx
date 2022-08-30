@@ -1,14 +1,21 @@
-import { Divider, Flex, HStack, Image, Text } from '@chakra-ui/react'
+import { Divider, Flex, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 import { TextBoxIcon } from '~/components/TextBoxIcon'
-
+import translates from '~/locales'
 
 export const About = () => {
+  const router = useRouter()
+
+  const { locale } = router
+  const { en, es, pt } = translates
+  const t = locale === 'es' ? es : locale === 'en' ? en : pt
+
   return (
     <Flex
       id="about"
       flexDirection="column"
       justifyContent="center"
-      pt={['5rem', '3rem', "6rem"]}
+      pt={['5rem', '3rem', '6rem']}
       pb="8rem"
       px={['1rem', '1.5rem', '3rem']}
       alignItems="center"
@@ -21,7 +28,7 @@ export const About = () => {
         lineHeight="2rem"
       >
         <Text color="gray.50" fontSize="2rem" letterSpacing="8px">
-          Sobre mim
+          {t.about.title}
         </Text>
         <Text
           color="gray.300"
@@ -30,9 +37,7 @@ export const About = () => {
           fontWeight={300}
           mt="1.8rem"
         >
-          Me chamo Rafael Cassaro e viajei o mundo tatuando. Já trabalhei na
-          Nova Zelândia, Brasil, Europa e muito outros países. Agora estou no
-          Stefano’s Tattoo Studio, um dos melhores estúdios da Flórida.
+          {t.about.description}
         </Text>
       </Flex>
       <Flex
@@ -42,8 +47,8 @@ export const About = () => {
         textAlign="center"
         gap={['1rem']}
       >
-        <TextBoxIcon title="+20 anos de experiência">
-          Você está seguro, nas mãos de um profissional que sabe o que faz.
+        <TextBoxIcon title={t.about.years.title}>
+          {t.about.years.description}
         </TextBoxIcon>
         <Divider
           display={['block', 'block', 'none']}
@@ -61,8 +66,8 @@ export const About = () => {
           h="80px"
           bgColor="gray.500"
         />
-        <TextBoxIcon title="+1000 tatuagens realizadas">
-          Você está seguro, nas mãos de um profissional que sabe o que faz.
+        <TextBoxIcon title={t.about.tatto.title}>
+          {t.about.tatto.description}
         </TextBoxIcon>
         <Divider
           display={['block', 'block', 'none']}
@@ -80,9 +85,8 @@ export const About = () => {
           h="80px"
           bgColor="gray.500"
         />
-        <TextBoxIcon title="Entrega de Qualidade">
-          Um resultado que irá te deixar 100% satisfeito, com as expectativas
-          superadas
+        <TextBoxIcon title={t.about.quality.title}>
+          {t.about.quality.description}
         </TextBoxIcon>
       </Flex>
     </Flex>

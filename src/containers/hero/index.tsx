@@ -2,7 +2,7 @@ import translates from '~/locales'
 import { useRouter } from 'next/router'
 
 import { SolidButton } from '~/components/Buttons/SolidButton'
-import {  Flex, Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading, Link, Text } from '@chakra-ui/react'
 
 export const Hero = () => {
   const router = useRouter()
@@ -28,31 +28,37 @@ export const Hero = () => {
       <Flex
         flex="1"
         flexDirection="column"
-        alignItems={["center", "center", "flex-start"]}
+        alignItems={['center', 'center', 'flex-start']}
         textAlign={['center', 'center', 'inherit']}
         placeContent="center"
         maxW={1000}
       >
         <Heading
           fontFamily="Roboto"
-          fontSize={['2rem', '3rem', '4.3rem']}
+          fontSize={['2rem', '3rem', '3.1rem', '3.2rem', '3.3rem', '4.3rem']}
           color="gray.50"
           fontWeight={400}
         >
           {t.hero.title}
         </Heading>
-        <Text pb="2rem" color="gray.500" fontSize="1.3rem" mt="2rem">
+        <Text pb="2rem" color="gray.500" fontSize="1.3rem" mt="2rem" maxW={[400, 500, 700]}>
           {t.hero.description}
         </Text>
-        <SolidButton
-          mt="2rem"
-          fontSize="1.2rem"
-          px="2rem"
-          py={["1.8rem", "2rem"]}
-          w={['100%', "100%", '50%']}
+        <Link
+          href="instagram.com"
+          w={['100%', '100%', '80%']}
+          _hover={{ textDecoration: 'none' }}
         >
-          {t.hero.button}
-        </SolidButton>
+          <SolidButton
+            mt="2rem"
+            fontSize={['.9rem', '1rem', '1rem', '1rem', '1.1rem']}
+            px="2rem"
+            py={['1.8rem', '2rem']}
+            w={['100%', '100%', '50%']}
+          >
+            {t.hero.button}
+          </SolidButton>
+        </Link>
       </Flex>
       {/* <Link alignSelf="center" href="#about">
         <Lottie

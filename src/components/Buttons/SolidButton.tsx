@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 
 interface ButtonProps {
   children: ReactNode
-  fontSize: string
+  fontSize: any
   w?: any
   mt?: string
   px: string
@@ -25,7 +25,7 @@ export const SolidButton = ({ children, fontSize, w, mt, py, px }: ButtonProps) 
       alignItems="center"
       fontWeight="bold"
       transition="0.2s all ease"
-      _hover={{ filter: 'drop-shadow(0px 0px 10px #c2ad602a)' }}
+      _hover={{ filter: 'drop-shadow(0px 0px 12px #c2ad6045)' }}
       _active={{ opacity: 0.9 }}
       _focus={{ border: 'none' }}
     >

@@ -18,12 +18,48 @@ const elements = [
   },
   {
     key: '3',
+    src: '/images/tatto3.png'
+  },
+  {
+    key: '4',
     src: '/images/tatto4.png'
   },
   {
     key: '5',
+    src: '/images/tatto5.png'
+  },
+  {
+    key: '6',
+    src: '/images/tatto6.png'
+  },
+  {
+    key: '7',
     src: '/images/tatto7.png'
-  }
+  },
+  {
+    key: '8',
+    src: '/images/tatto8.png'
+  },
+  {
+    key: '9',
+    src: '/images/tatto9.png'
+  },
+  {
+    key: '10',
+    src: '/images/tatto10.png'
+  },
+  {
+    key: '11',
+    src: '/images/tatto11.png'
+  },
+  {
+    key: '12',
+    src: '/images/tatto12.png'
+  },
+  {
+    key: '13',
+    src: '/images/tatto13.png'
+  },
 ]
 
 const WorksCaroussel = () => {
@@ -63,24 +99,6 @@ const WorksCaroussel = () => {
             </SwiperSlide>
           )
         })}
-        {/* <SwiperSlide>
-          <Image maxH={350} src="/images/tatto1.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image maxH={350} src="/images/tatto2.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image maxH={350} src="/images/tatto4.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image maxH={350} src="/images/tatto4.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image maxH={350} src="/images/tatto7.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image maxH={350} src="/images/tatto7.png" />
-        </SwiperSlide> */}
       </Swiper>
     </Container>
   )

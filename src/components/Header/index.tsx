@@ -4,6 +4,7 @@ import translates from '~/locales'
 
 import { DropdownLang } from './DropdownLang'
 import { MenuMobile } from './MenuMobile'
+import { Link } from './Link'
 import { Icon } from '../Icon'
 
 import { CgMenuRight } from 'react-icons/cg'
@@ -17,15 +18,15 @@ import {
   useBreakpointValue,
   useDisclosure
 } from '@chakra-ui/react'
-import { Link } from './Link'
 
 export const Header = () => {
   const router = useRouter()
   const btnRef = useRef()
 
   const { locale } = router
-  const { en, es } = translates
-  const t = locale === 'es' ? es : en
+  const { en, es, pt } = translates
+  const t = locale === 'es' ? es : locale === 'en' ? en : pt
+
 
   const changeLanguage = e => {
     const locale = e
