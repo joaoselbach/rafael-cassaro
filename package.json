@@ -11,10 +11,12 @@
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@chakra-ui/core": "^0.8.0",
+    "@chakra-ui/icons": "^2.0.9",
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@hookform/resolvers": "^2.8.8",
+    "@types/google.maps": "^3.50.0",
     "@types/yup": "^0.29.14",
     "active-campaign-react": "^1.4.0",
     "framer-motion": "6.5.1",
