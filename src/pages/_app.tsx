@@ -1,5 +1,5 @@
 import { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
+import { Box, ChakraProvider } from '@chakra-ui/react'
 import SimpleReactLightbox from 'simple-react-lightbox'
 
 import theme from '../styles/theme'
@@ -12,11 +12,10 @@ import 'react-awesome-lightbox/build/style.css'
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
-
-      <Header />
-      <SimpleReactLightbox>
-        <Component {...pageProps} />
-      </SimpleReactLightbox>
+        <Header />
+        <SimpleReactLightbox>
+          <Component {...pageProps} />
+        </SimpleReactLightbox>
     </ChakraProvider>
   )
 }

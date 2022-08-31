@@ -20,7 +20,9 @@ export const Home = () => {
       <Head>
         <title>Rafael Cassaro</title>
       </Head>
-      <Box as="main">
+      <Box
+        as="main"
+      >
         <Box
           backgroundImage={[
             '/images/bg2.png',
@@ -32,7 +34,7 @@ export const Home = () => {
           ]}
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
-          backgroundPosition={["right", "right", "inherit" ]}
+          backgroundPosition={['right', 'right', 'inherit']}
           h="100%"
           minH="100vh"
         >

@@ -28,7 +28,21 @@ export const theme = extendTheme({
       },
       html: {
         scrollBehavior: 'smooth',
-        webkitFontSmoothing: 'antialiased'
+        webkitFontSmoothing: 'antialiased',
+
+        '&::-webkit-scrollbar': {
+          width: '4px'
+        },
+        '&::-webkit-scrollbar-track': {
+          background: '#2b2b2b'
+        },
+        '&::-webkit-scrollbar-thumb': {
+          background: '#C2AD60',
+          borderRadius: '24px'
+        },
+        '::-webkit-scrollbar-thumb:hover': {
+          background: '#c2b27a'
+        }
       }
     }
   }
