@@ -42,7 +42,7 @@ export const Home = () => {
           <About />
         </Box>
         <Works />
-        <Box maxW={1600} margin="0 auto">
+        <Box maxW={1600} color="#c2b27a" margin="0 auto">
           <Testimonials />
           <Location />
         </Box>
