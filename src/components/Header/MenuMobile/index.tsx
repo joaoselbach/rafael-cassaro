@@ -3,6 +3,8 @@ import translates from '~/locales'
 
 import { MenuMobileSection } from './MenuMobileSection'
 import { SolidButton } from '~/components/Buttons/SolidButton'
+import { MenuMobileLink } from './MenuMobileLink'
+import { DropdownLang } from '../DropdownLang'
 
 import {
   Flex,
@@ -14,9 +16,6 @@ import {
   HStack,
   Image
 } from '@chakra-ui/react'
-import { FaMailBulk } from 'react-icons/fa'
-import { MenuMobileLink } from './MenuMobileLink'
-import { DropdownLang } from '../DropdownLang'
 
 interface MenuMobileProps {
   onCloseMenuMobile: () => void
@@ -64,24 +63,13 @@ export const MenuMobile = ({
           _hover={{ bgColor: 'gray.300' }}
         />
         <Flex
-          alignItems="flex-start"
+          alignItems="center"
           flexDirection="column"
           mt="1rem"
           px="1.4rem"
         >
-          <MenuMobileSection >
-            <Link
-              href="#contact"
-              mt="1.5rem"
-              _hover={{ textDecoration: 'none' }}
-            >
-              <SolidButton w="100%" fontSize=".90rem" px="1.5rem" py="1.85rem">
-                {t.hero.button}
-              </SolidButton>
-            </Link>
-          </MenuMobileSection>
-
-          <MenuMobileSection borderTopWidth={1}>
+          <Image src="/images/logoFooter.svg" mt="2rem"  />
+          <MenuMobileSection>
             <MenuMobileLink href="/">{t.header.home}</MenuMobileLink>
             <MenuMobileLink href="/#about">{t.header.about}</MenuMobileLink>
             <MenuMobileLink href="/#works">{t.header.works}</MenuMobileLink>

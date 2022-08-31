@@ -20,18 +20,19 @@ export const Hero = () => {
       w="100%"
       h="100%"
       pt={['10rem', 0, 0]}
-      minH={['80vh', '100vh', '100vh']}
+      minH={['70vh', '100vh', '100vh']}
       maxW={1600}
       margin="0 auto"
       px={['.6rem', '2rem', '3rem']}
     >
       <Flex
         flex="1"
+        mt={["19rem", "10rem", 0]}
         flexDirection="column"
         alignItems={['center', 'center', 'flex-start']}
         textAlign={['center', 'center', 'inherit']}
         placeContent="center"
-        maxW={1000}
+        maxW={700}
       >
         <Heading
           fontFamily="Roboto"
@@ -41,24 +42,10 @@ export const Hero = () => {
         >
           {t.hero.title}
         </Heading>
-        <Text pb="2rem" color="gray.500" fontSize="1.3rem" mt="2rem" maxW={[400, 500, 700]}>
+        <Text pb="2rem" color="gray.500" fontSize="1.3rem" mt="1rem" maxW={[400, 500, 700]}>
           {t.hero.description}
         </Text>
-        <Link
-          href="instagram.com"
-          w={['100%', '100%', '80%']}
-          _hover={{ textDecoration: 'none' }}
-        >
-          <SolidButton
-            mt="2rem"
-            fontSize={['.9rem', '1rem', '1rem', '1rem', '1.1rem']}
-            px="2rem"
-            py={['1.8rem', '2rem']}
-            w={['100%', '100%', '50%']}
-          >
-            {t.hero.button}
-          </SolidButton>
-        </Link>
+       
       </Flex>
       {/* <Link alignSelf="center" href="#about">
         <Lottie

@@ -22,7 +22,6 @@ export const Container = styled.div`
 
     @media (max-width: 460px) {
       max-height: 600px;
-      width: 350px;
     }
   }
 
