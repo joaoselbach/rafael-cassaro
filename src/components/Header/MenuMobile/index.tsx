@@ -10,8 +10,13 @@ import {
   DrawerOverlay,
   DrawerCloseButton,
   DrawerContent,
-  Link
+  Link,
+  HStack,
+  Image
 } from '@chakra-ui/react'
+import { FaMailBulk } from 'react-icons/fa'
+import { MenuMobileLink } from './MenuMobileLink'
+import { DropdownLang } from '../DropdownLang'
 
 interface MenuMobileProps {
   onCloseMenuMobile: () => void
@@ -64,16 +69,44 @@ export const MenuMobile = ({
           mt="1rem"
           px="1.4rem"
         >
-          <MenuMobileSection title="">
+          <MenuMobileSection >
             <Link
               href="#contact"
               mt="1.5rem"
               _hover={{ textDecoration: 'none' }}
             >
               <SolidButton w="100%" fontSize=".90rem" px="1.5rem" py="1.85rem">
-                {t.header.faq}
+                {t.hero.button}
               </SolidButton>
             </Link>
+          </MenuMobileSection>
+
+          <MenuMobileSection borderTopWidth={1}>
+            <MenuMobileLink href="/">{t.header.home}</MenuMobileLink>
+            <MenuMobileLink href="/#about">{t.header.about}</MenuMobileLink>
+            <MenuMobileLink href="/#works">{t.header.works}</MenuMobileLink>
+            <MenuMobileLink href="/#location">
+              {t.header.location}
+            </MenuMobileLink>
+          </MenuMobileSection>
+          <MenuMobileSection borderTopWidth={1}>
+            <Flex w="100%" justifyContent="space-between" px="2rem">
+              <HStack>
+                <Link
+                  transition=".2 all ease"
+                  _hover={{ transform: 'translateY(-2px)' }}
+                >
+                  <Image src="/images/facebook.svg" />
+                </Link>
+                <Link
+                  transition=".2 all ease"
+                  _hover={{ transform: 'translateY(-2px)' }}
+                >
+                  <Image src="/images/insta.svg" />
+                </Link>
+              </HStack>
+              <DropdownLang />
+            </Flex>
           </MenuMobileSection>
         </Flex>
       </DrawerContent>
