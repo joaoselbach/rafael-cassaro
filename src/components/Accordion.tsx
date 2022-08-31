@@ -21,7 +21,7 @@ export const Accordion = ({ title, children }: FrequentQuestionsProps) => {
         bgColor="gray.700"
         borderTop="0"
         borderBottom="0"
-        minW={[382, 500, 800]}
+        minW={[0, 382, 500, 800]}
       >
         <AccordionButton w="100%">
           <Box

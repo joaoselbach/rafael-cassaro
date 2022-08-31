@@ -22,8 +22,17 @@ export const Home = () => {
       </Head>
       <Box as="main">
         <Box
-          backgroundImage={["/images/bg2.png", "/images/bgMedium.png", "/images/bgMedium.png", "/images/bgMedium.png", "/images/bgMedium.png", "/images/bg2.png"]}
+          backgroundImage={[
+            '/images/bg2.png',
+            '/images/bgMedium.png',
+            '/images/bgMedium.png',
+            '/images/bgMedium.png',
+            '/images/bgMedium.png',
+            '/images/bg2.png'
+          ]}
+          backgroundSize="cover"
           backgroundRepeat="no-repeat"
+          backgroundPosition={["right", "right", "inherit" ]}
           h="100%"
           minH="100vh"
         >
