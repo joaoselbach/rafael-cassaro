@@ -60,6 +60,10 @@ const elements = [
     key: '13',
     src: '/images/tatto13.png'
   },
+  {
+    key: '14',
+    src: '/images/tatto14.png'
+  },
 ]
 
 const WorksCaroussel = () => {
@@ -69,7 +73,7 @@ const WorksCaroussel = () => {
         slidesPerView={6}
         breakpoints={{
           1460: {
-            slidesPerView: 6
+            slidesPerView: 5
           },
           1160: {
             slidesPerView: 4

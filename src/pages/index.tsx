@@ -25,16 +25,16 @@ export const Home = () => {
       >
         <Box
           backgroundImage={[
-            '/images/bg2.png',
+            '/images/bgM.png',
             '/images/bgMedium.png',
             '/images/bgMedium.png',
             '/images/bgMedium.png',
             '/images/bgMedium.png',
             '/images/bg2.png'
           ]}
-          backgroundSize="cover"
+          backgroundSize={["contain", "cover", "cover", "cover"]}
           backgroundRepeat="no-repeat"
-          backgroundPosition={['right', 'right', 'inherit']}
+          backgroundPosition={['inherit', 'right', 'inherit']}
           h="100%"
           minH="100vh"
         >
@@ -46,12 +46,13 @@ export const Home = () => {
           <Testimonials />
           <Location />
         </Box>
-        <Box pt="8rem" w="100%" position="relative">
+        <Box mt="8rem" w="100%" position="relative">
           <Box
             position="absolute"
-            display={showMap === false ? 'flex' : 'none'}
+            display="flex"
+            bottom="0"
             cursor="pointer"
-            h="302px"
+            h={showMap === false ? '100%' : '12%'}
             w="100%"
             mt="-1px"
             justifyContent="center"
@@ -59,16 +60,16 @@ export const Home = () => {
             transition="0.2s all ease"
             _hover={{ backgroundColor: '#000000b9' }}
             onClick={() => {
-              setShowMap(true)
+              setShowMap((showMap === true ? false : true))
             }}
           >
             <Text
               fontWeight={500}
-              fontSize="1.2rem"
+              fontSize="1rem"
               alignSelf="center"
               justifySelf="center"
             >
-              Abrir mapa <ChevronRightIcon />
+              { showMap ? 'Esconder mapa' : "Mostrar mapa" } <ChevronRightIcon />
             </Text>
           </Box>
           <iframe
