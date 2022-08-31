@@ -13,94 +13,94 @@ export const es = {
     button: 'Conoce mis trabajos'
   },
   about: {
-    title: 'Sobre mim',
+    title: 'Sobre mi',
     description:
-      'Me chamo Rafael Cassaro e viajei o mundo tatuando. Já trabalhei na Nova Zelândia, Brasil, Europa e muito outros países. Agora estou no Stefano’s Tattoo Studio, um dos melhores estúdios da Flórida',
+      "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Nueva Zelanda, Brasil, Europa y muchos otros países. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida",
     years: {
-      title: '+20 anos de experiência',
+      title: '+20 años de experiencia',
       description:
-        'Você está seguro, nas mãos de um profissional que sabe o que faz'
+        'Estás seguro, en manos de un profesional que sabe lo que hace'
     },
     tatto: {
-      title: '+1000 tatuagens realizadas',
+      title: '+1000 tatuajes realizados',
       description:
-        'Você está seguro nas mãos de um profissional que sabe o que faz'
+        'Estás seguro en manos de un profesional que sabe lo que hace',
     },
     quality: {
-      title: 'Entrega de Qualidade',
+      title: 'Entrega de calidad',
       description:
-        'Um resultado que irá te deixar 100% satisfeito, com as expectativas superadas'
+        'Un resultado que te dejará 100% satisfecho, con expectativas superadas'
     }
   },
   works: {
-    title: 'Trabalhos realizados'
+    title: 'Trabajo realizado'
   },
   testimonials: {
-    title: 'O que dizem',
-    nick: "Rafael is one of the best tattoo artists I know! He was very nice and enthusiastic with my idea, the whole experience was great. I'll be back soon to get another tattoo done with him. The work he did exceeded all my expectations. I definitely recommend him!",
+    title: 'Lo que ellos dicen',
+    nick: "¡Rafael es uno de los mejores tatuadores que conozco! Fue muy amable y entusiasta con mi idea, toda la experiencia fue genial. Volveré pronto para hacerme otro tatuaje con él. El trabajo que hizo superó todas mis expectativas. ¡Definitivamente lo recomiendo!",
     andres:
-      "t was a good experience to get a tattoo with Rafael, the final design was excellent as I wanted it to be, and I thank Rafael for such an excellent job, it exceeded all my expectations. It's been a while and the piece healed super solid the color super well. Soon I'll be thinking about my new project with Rafael",
-    luis: "I'm eternally grateful for the quality of my tattoo, the coloring and healing were perfect! He Exceeded my expectation by 100% and has already become my official tattoo artist. I lost count of how many times I was stopped on the street and I received compliments about the tattoo, simply sensational!",
+      "Fue una buena experiencia tatuarme con Rafael, el diseño final fue excelente como lo quería, y agradezco a Rafael por tan excelente trabajo, superó todas mis expectativas. Ha pasado un tiempo y la pieza curó súper sólida el color súper bien. Pronto estaré pensando en mi nuevo proyecto con Rafael",
+    luis: "Estoy eternamente agradecida por la calidad de mi tatuaje, ¡la coloración y la curación fueron perfectas! Superó mis expectativas en un 100% y ya se ha convertido en mi tatuador oficial. Perdí la cuenta de cuantas veces me pararon en la calle y recibí halagos por el tatuaje, simplemente sensacional!",
     sabrina:
-      "As soon as i was his work, i immediately fell in love with his style. I contacted him by message and he was very invested and kind from the start. This was one of the best tattoo experiences i had. He understood exactly what i was looking ofr and the tattoo was just beyond my expectations. If you're looking for a true artist, don't hesitate to contact him"
+      "Tan pronto como fui su trabajo, inmediatamente me enamoré de su estilo. Lo contacté por mensaje y se mostró muy interesado y amable desde el principio. Esta fue una de las mejores experiencias de tatuaje que tuve. Entendió exactamente lo que estaba buscando y el tatuaje superó mis expectativas. Si buscas un verdadero artista, no dudes en contactarlo"
   },
   location: {
-    title: 'Onde eu trabalho?',
+    title: '¿Donde yo trabajo?',
     description:
-      'Eu trabalho no Stefano’s Tattoo Studio, um dos melhores estúdios da Flórida. Localização premiada em Fort Lauderdale, bem ao lado da praia',
+      "Trabajo en Stefano's Tattoo Studio, uno de los mejores estudios de Florida. Ubicación galardonada en Fort Lauderdale, justo al lado de la playa",
     confort: {
-      title: 'Conforto',
+      title: 'Comodidad',
       description:
-        'Uma estrutura de primeira classe, feita para te deixar confortável e tranquilo'
+        'Una estructura de primera clase, hecha para que estés cómodo y relajado',
     },
     professional: {
-      title: 'Profissional',
+      title: 'Profesional',
       description:
-        'Apenas os melhores materiais e equipamentos do mercado, porque você merece o melhor'
+        'Solo los mejores materiales y equipos del mercado, porque te mereces lo mejor',
     },
     clean: {
-      title: 'Limpo',
+      title: 'Limpio',
       description:
-        'Ambiente 100% esterelizado. Você não precisa se preocupar com sua segurança e saúde'
+        'Ambiente 100% esterilizado. No tienes que preocuparte por tu seguridad y salud'
     },
-    map: 'Abrir o mapa'
+    map: 'Abre el mapa',
   },
   faq: {
     whatHappen: {
-      title: 'O que acontece depois que eu clicar no botão?',
+      title: '¿Qué sucede después de hacer clic en el botón?',
       description:
-        'Após preencher e enviar os seus dados, você receberá um email com todas as instruções e informações que precisa para darmos prosseguimento ao seu projeto. Por favor, verifique sua caixa de SPAM, ok? Ah, e seus dados estão 100% seguros comigo, ok?'
+        'Después de completar y enviar sus datos, recibirá un correo electrónico con todas las instrucciones e información que necesita para continuar con su proyecto. Por favor revisa tu carpeta de SPAM, ¿de acuerdo? Ah, y tus datos están 100 % seguros conmigo, ¿de acuerdo?'
     },
     price: {
-      title: 'Como eu faço o agendamento? Preciso pagar um sinal?',
+      title: '¿Cuánto cobras?',
       description:
-        'Os valores variam de acordo com o projeto, local do corpo e número de sessões. Preciso saber o que e onde você quer tatuar primeiro, para te passar o valor correto, beleza?'
+        'Los valores varían según el proyecto, la ubicación del cuerpo y el número de sesiones. Necesito saber que y donde quieres tatuarte primero, para darte el valor correcto, ok?'
     },
     schedule: {
-      title: 'Como funciona no dia da tatuagem?',
+      title: '¿Cómo hago una cita? ¿Necesito pagar un pago inicial?',
       description:
-        'O agendamento é feito comigo mesmo, após conversarmos pelo email. Peço um sinal de 300 dólares para ter a certeza de que você está comprometido com o projeto'
+        'La cita se hace conmigo, después de hablar por correo electrónico. Solicito un pago inicial de $ 300 para asegurarme de que esté comprometido con el proyecto'
     },
     day: {
-      title: '',
+      title: '¿Cómo funciona el día del tatuaje?',
       description:
-        'Primeiro eu foco em te deixar o mais confortável possível. Depois, finalizamos os últimos detalhes da arte juntos. Por fim, eu preparo os meus materiais, colo o decalque na sua pele e então começamos a tatuar. Normalmente faço uma pausa a cada uma hora e meia, para descansarmos e tomarmos uma água, um café…'
+        'Primero me centro en que estés lo más cómoda posible. Posteriormente, finalizamos los últimos detalles de la obra de arte juntos. Finalmente, preparo mis materiales, aplico la calcomanía en tu piel y luego comenzamos a tatuar. Suelo hacer un descanso cada hora y media, para descansar y tomar un vaso de agua, un café…',
     },
     hurts: {
-      title: 'Fazer tatuagem dói?',
+      title: '¿Hacerse un tatuaje duele?',
       description:
-        'Sim, tatuagem dói, mas na maioria dos casos é uma dor beeem suportável. Alguns lugares dói naturalmente mais do que outros, então se a dor for um problema muito grande para você, te ajudei a escolher um local tranquilo de se tatuar'
+        'Sí, tatuarse duele, pero en la mayoría de los casos es un dolor muy llevadero. Algunos lugares naturalmente duelen más que otros, así que si el dolor es demasiado problema para ti, te ayudaré a elegir un lugar tranquilo para tatuarte',
     },
     idea: {
-      title: 'Quero fazer uma tatuagem, mas não tenho ideia de arte!',
+      title: '¡Quiero hacerme un tatuaje, pero no tengo ni idea de arte!',
       description:
-        'Não se preocupe. Durante o processo de agendamento, conversaremos bastante para eu entender quem é você, o que você gosta e o que está buscando no projeto. Com isso, conseguirei montar uma arte que te deixará 100% satisfeito'
+        'No se preocupe. Durante el proceso de programación, hablaremos mucho para que entienda quién eres, qué te gusta y qué buscas en el proyecto. Con eso, podré armar un arte que te dejará 100% satisfecho',
     },
     badExperience: {
       title:
-        'Já tive algumas experiências ruins com outros artistas, agora tenho medo de fazer outra!',
+        'He tenido algunas malas experiencias con otros artistas, ¡ahora tengo miedo de hacer otra!',
       description:
-        'Infelizmente existem muitos tatuadores que não levam a profissão a sério e acabam entregando um resultado medíocre e uma experiência ruim. Você pode ter certeza que irei me dedicar completamente para que você tenha uma tatuagem fantástica e uma experiência de primeira'
+        'Desafortunadamente, hay muchos tatuadores que no se toman en serio su profesión y terminan entregando un resultado mediocre y una mala experiencia. Puedes estar seguro de que me dedicaré por completo para que tengas un tatuaje fantástico y una experiencia de primera',
     }
   }
 }
