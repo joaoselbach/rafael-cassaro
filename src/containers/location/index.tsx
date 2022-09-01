@@ -28,7 +28,8 @@ export const Location = () => {
           position="absolute"
           display="flex"
           cursor="pointer"
-          h={showStudio === false ? '100.3%' : '8%'}
+          borderRadius=".4rem"
+          h={showStudio === false ? '100%' : '8%'}
           bottom="0"
           w={['100%', '60%', '60%', '80%']}
           mt="-1px"
@@ -45,8 +46,9 @@ export const Location = () => {
             fontSize="1rem"
             alignSelf="center"
             justifySelf="center"
+            color="gray.50"
           >
-            {showStudio ? 'Esconder foto' : 'Mostrar estúdio'} <ChevronRightIcon />
+            { showStudio ? t.location.studio.close : t.location.studio.open } <ChevronRightIcon />
           </Text>
         </Box>
       </Flex>

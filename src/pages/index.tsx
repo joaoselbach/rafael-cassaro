@@ -11,9 +11,17 @@ import { useState } from 'react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Faq } from '~/containers/faq'
 import { Footer } from '~/containers/footer'
+import translates from '~/locales'
+import { useRouter } from 'next/router'
 
 export const Home = () => {
   const [showMap, setShowMap] = useState(false)
+
+  const router = useRouter()
+
+  const { locale } = router
+  const { en, es, pt } = translates
+  const t = locale === 'es' ? es : locale === 'en' ? en : pt
 
   return (
     <>
@@ -69,7 +77,7 @@ export const Home = () => {
               alignSelf="center"
               justifySelf="center"
             >
-              { showMap ? 'Esconder mapa' : "Mostrar mapa" } <ChevronRightIcon />
+              { showMap ? t.location.map.close : t.location.map.open } <ChevronRightIcon />
             </Text>
           </Box>
           <iframe

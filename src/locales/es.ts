@@ -63,7 +63,14 @@ export const es = {
       description:
         'Ambiente 100% esterilizado. No tienes que preocuparte por tu seguridad y salud'
     },
-    map: 'Abre el mapa',
+    studio: {
+      open: "Mostrar estúdio",
+      close: "Esconder estúdio"
+    },
+    map: {
+      open: "Abre el mapa",
+      close: "Ocultar mapa",
+    }
   },
   faq: {
     whatHappen: {

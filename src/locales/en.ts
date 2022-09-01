@@ -63,7 +63,14 @@ export const en = {
       description:
         "100% sterilized environment. You don't have to worry about your safety and health"
     },
-    map: 'Open map'
+    studio: {
+      open: "Show studio",
+      close: "Hide studio"
+    },
+    map: {
+      open: "Open map",
+      close: "Hide map",
+    }
   },
   faq: {
     whatHappen: {
