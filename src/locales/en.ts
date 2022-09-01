@@ -24,7 +24,7 @@ export const en = {
     tatto: {
       title: '+1000 tattoos performed',
       description:
-        'You are safe in the hands of a professional who knows what he is doing'
+        'All this dedicated expertise to make your tattoo look fantastic!',
     },
     quality: {
       title: 'Quality Delivery',
