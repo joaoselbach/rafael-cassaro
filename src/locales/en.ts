@@ -24,7 +24,7 @@ export const en = {
     tatto: {
       title: '+1000 tattoos performed',
       description:
-        'You are safe in the hands of a professional who knows what he is doing'
+        'All this dedicated expertise to make your tattoo look fantastic!',
     },
     quality: {
       title: 'Quality Delivery',
@@ -63,7 +63,14 @@ export const en = {
       description:
         "100% sterilized environment. You don't have to worry about your safety and health"
     },
-    map: 'Open map'
+    studio: {
+      open: "Show studio",
+      close: "Hide studio"
+    },
+    map: {
+      open: "Open map",
+      close: "Hide map",
+    }
   },
   faq: {
     whatHappen: {

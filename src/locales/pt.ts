@@ -24,7 +24,7 @@ export const pt = {
     tatto: {
       title: '+1000 tatuagens realizadas',
       description:
-        'Você está seguro nas mãos de um profissional que sabe o que faz'
+        'Toda essa expertise dedicada para que sua tatuagem fique fantástica!'
     },
     quality: {
       title: 'Entrega de Qualidade',
@@ -63,7 +63,14 @@ export const pt = {
       description:
         'Ambiente 100% esterelizado. Você não precisa se preocupar com sua segurança e saúde'
     },
-    map: 'Abrir o mapa'
+    studio: {
+      open: "Mostrar estúdio",
+      close: "Esconder estúdio"
+    },
+    map: {
+      open: "Mostrar mapa",
+      close: "Esconder mapa"
+    }
   },
   faq: {
     whatHappen: {
