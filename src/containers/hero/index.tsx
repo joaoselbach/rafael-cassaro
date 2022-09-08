@@ -27,7 +27,7 @@ export const Hero = () => {
     >
       <Flex
         flex="1"
-        mt={['19rem', '10rem', 0]}
+        mt={['10rem', '10rem', 0]}
         flexDirection="column"
         alignItems={['center', 'center', 'flex-start']}
         textAlign={['center', 'center', 'inherit']}
