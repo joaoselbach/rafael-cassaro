@@ -24,7 +24,7 @@ export const es = {
     tatto: {
       title: '+1000 tatuajes realizados',
       description:
-        'Estás seguro en manos de un profesional que sabe lo que hace.',
+        '¡Toda esta experiencia dedicada para hacer que tu tatuaje luzca fantástico!',
     },
     quality: {
       title: 'Entrega de calidad',

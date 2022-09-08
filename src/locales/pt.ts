@@ -1,3 +1,4 @@
+import { Benefits } from './../containers/benefits/index';
 export const pt = {
   header: {
     home: 'Inicio',
@@ -34,6 +35,10 @@ export const pt = {
   },
   works: {
     title: 'Trabalhos realizados'
+  },
+
+  benefits: {
+    title: 'Benefícios da tatuagem'
   },
   testimonials: {
     title: 'O que dizem',
