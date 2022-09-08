@@ -7,9 +7,9 @@ export const es = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'Un tatuaje realista que estarás orgulloso de lucir',
+    title: 'Un tatuaje realista que estarás orgulloso de lucir.',
     description:
-      'Impresiona a la gente y recibe elogios donde quiera que vayas con un tatuaje hecho exclusivamente para ti',
+      'Impresiona a la gente y recibe elogios donde quiera que vayas con un tatuaje hecho exclusivamente para ti.',
     button: 'Conoce mis trabajos'
   },
   about: {
@@ -19,17 +19,17 @@ export const es = {
     years: {
       title: '+20 años de experiencia',
       description:
-        'Estás seguro, en manos de un profesional que sabe lo que hace'
+        'Estás seguro, en manos de un profesional que sabe lo que hace.'
     },
     tatto: {
       title: '+1000 tatuajes realizados',
       description:
-        'Estás seguro en manos de un profesional que sabe lo que hace',
+        'Estás seguro en manos de un profesional que sabe lo que hace.',
     },
     quality: {
       title: 'Entrega de calidad',
       description:
-        'Un resultado que te dejará 100% satisfecho, con expectativas superadas'
+        'Un resultado que te dejará 100% satisfecho, con expectativas superadas.'
     }
   },
   works: {
@@ -39,29 +39,29 @@ export const es = {
     title: 'Lo que ellos dicen',
     nick: "¡Rafael es uno de los mejores tatuadores que conozco! Fue muy amable y entusiasta con mi idea, toda la experiencia fue genial. Volveré pronto para hacerme otro tatuaje con él. El trabajo que hizo superó todas mis expectativas. ¡Definitivamente lo recomiendo!",
     andres:
-      "Fue una buena experiencia tatuarme con Rafael, el diseño final fue excelente como lo quería, y agradezco a Rafael por tan excelente trabajo, superó todas mis expectativas. Ha pasado un tiempo y la pieza curó súper sólida el color súper bien. Pronto estaré pensando en mi nuevo proyecto con Rafael",
+      "Fue una buena experiencia tatuarme con Rafael, el diseño final fue excelente como lo quería, y agradezco a Rafael por tan excelente trabajo, superó todas mis expectativas. Ha pasado un tiempo y la pieza curó súper sólida el color súper bien. Pronto estaré pensando en mi nuevo proyecto con Rafael.",
     luis: "Estoy eternamente agradecida por la calidad de mi tatuaje, ¡la coloración y la curación fueron perfectas! Superó mis expectativas en un 100% y ya se ha convertido en mi tatuador oficial. Perdí la cuenta de cuantas veces me pararon en la calle y recibí halagos por el tatuaje, simplemente sensacional!",
     sabrina:
-      "Tan pronto como fui su trabajo, inmediatamente me enamoré de su estilo. Lo contacté por mensaje y se mostró muy interesado y amable desde el principio. Esta fue una de las mejores experiencias de tatuaje que tuve. Entendió exactamente lo que estaba buscando y el tatuaje superó mis expectativas. Si buscas un verdadero artista, no dudes en contactarlo"
+      "Tan pronto como fui su trabajo, inmediatamente me enamoré de su estilo. Lo contacté por mensaje y se mostró muy interesado y amable desde el principio. Esta fue una de las mejores experiencias de tatuaje que tuve. Entendió exactamente lo que estaba buscando y el tatuaje superó mis expectativas. Si buscas un verdadero artista, no dudes en contactarlo."
   },
   location: {
     title: '¿Donde yo trabajo?',
     description:
-      "Trabajo en Stefano's Tattoo Studio, uno de los mejores estudios de Florida. Ubicación galardonada en Fort Lauderdale, justo al lado de la playa",
+      "Trabajo en Stefano's Tattoo Studio, uno de los mejores estudios de Florida. Ubicación galardonada en Fort Lauderdale, justo al lado de la playa.",
     confort: {
       title: 'Comodidad',
       description:
-        'Una estructura de primera clase, hecha para que estés cómodo y relajado',
+        'Una estructura de primera clase, hecha para que estés cómodo y relajado.',
     },
     professional: {
       title: 'Profesional',
       description:
-        'Solo los mejores materiales y equipos del mercado, porque te mereces lo mejor',
+        'Solo los mejores materiales y equipos del mercado, porque te mereces lo mejor.',
     },
     clean: {
       title: 'Limpio',
       description:
-        'Ambiente 100% esterilizado. No tienes que preocuparte por tu seguridad y salud'
+        'Ambiente 100% esterilizado. No tienes que preocuparte por tu seguridad y salud.'
     },
     studio: {
       open: "Mostrar estúdio",
@@ -73,6 +73,7 @@ export const es = {
     }
   },
   faq: {
+    title: 'FAQ',
     whatHappen: {
       title: '¿Qué sucede después de hacer clic en el botón?',
       description:
@@ -86,7 +87,7 @@ export const es = {
     schedule: {
       title: '¿Cómo hago una cita? ¿Necesito pagar un pago inicial?',
       description:
-        'La cita se hace conmigo, después de hablar por correo electrónico. Solicito un pago inicial de $ 300 para asegurarme de que esté comprometido con el proyecto'
+        'La cita se hace conmigo, después de hablar por correo electrónico. Solicito un pago inicial de $ 300 para asegurarme de que esté comprometido con el proyecto.'
     },
     day: {
       title: '¿Cómo funciona el día del tatuaje?',
@@ -96,18 +97,18 @@ export const es = {
     hurts: {
       title: '¿Hacerse un tatuaje duele?',
       description:
-        'Sí, tatuarse duele, pero en la mayoría de los casos es un dolor muy llevadero. Algunos lugares naturalmente duelen más que otros, así que si el dolor es demasiado problema para ti, te ayudaré a elegir un lugar tranquilo para tatuarte',
+        'Sí, tatuarse duele, pero en la mayoría de los casos es un dolor muy llevadero. Algunos lugares naturalmente duelen más que otros, así que si el dolor es demasiado problema para ti, te ayudaré a elegir un lugar tranquilo para tatuarte.',
     },
     idea: {
       title: '¡Quiero hacerme un tatuaje, pero no tengo ni idea de arte!',
       description:
-        'No se preocupe. Durante el proceso de programación, hablaremos mucho para que entienda quién eres, qué te gusta y qué buscas en el proyecto. Con eso, podré armar un arte que te dejará 100% satisfecho',
+        'No se preocupe. Durante el proceso de programación, hablaremos mucho para que entienda quién eres, qué te gusta y qué buscas en el proyecto. Con eso, podré armar un arte que te dejará 100% satisfecho.',
     },
     badExperience: {
       title:
         'He tenido algunas malas experiencias con otros artistas, ¡ahora tengo miedo de hacer otra!',
       description:
-        'Desafortunadamente, hay muchos tatuadores que no se toman en serio su profesión y terminan entregando un resultado mediocre y una mala experiencia. Puedes estar seguro de que me dedicaré por completo para que tengas un tatuaje fantástico y una experiencia de primera',
+        'Desafortunadamente, hay muchos tatuadores que no se toman en serio su profesión y terminan entregando un resultado mediocre y una mala experiencia. Puedes estar seguro de que me dedicaré por completo para que tengas un tatuaje fantástico y una experiencia de primera.',
     }
   }
 }

@@ -27,7 +27,7 @@ export const Faq = () => {
         py={['1rem', '2rem']}
         px={['1rem', '1.5rem', '2.5rem']}
       >
-        {t.works.title}
+        {t.faq.title}
       </Text>
       <VStack mt="1rem" px="0">
         <Accordion title={t.faq.whatHappen.title}>

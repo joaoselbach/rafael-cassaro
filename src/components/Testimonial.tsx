@@ -26,7 +26,7 @@ export const Testimonial = ({ description, name, src }: TestimonialProps) => {
       <Flex gap="1rem" borderTopWidth={1} pt="2rem" borderTopColor="gray.600">
         <Avatar src={src} size="lg" />
         <VStack alignItems="flex-start" fontWeight={700} fontSize="1.2rem">
-          <Text>{name}</Text>
+          <Text color="gray.50">{name}</Text>
           <Image src="/images/stars.svg" />
         </VStack>
       </Flex>

@@ -42,6 +42,9 @@ const TestimonialCaroussel = () => {
       <Swiper
         slidesPerView={3}
         spaceBetween={90}
+        autoplay={{
+          delay: 4000,
+        }}
         breakpoints={{
           1368: {
             slidesPerView: 3

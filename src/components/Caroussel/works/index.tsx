@@ -9,6 +9,14 @@ SwiperCore.use([Navigation, Autoplay])
 
 const elements = [
   {
+    key: '12',
+    src: '/images/tatto12.png'
+  },
+  {
+    key: '10',
+    src: '/images/tatto10.png'
+  },
+  {
     key: '1',
     src: '/images/tatto1.png'
   },
@@ -45,16 +53,8 @@ const elements = [
     src: '/images/tatto9.png'
   },
   {
-    key: '10',
-    src: '/images/tatto10.png'
-  },
-  {
     key: '11',
     src: '/images/tatto11.png'
-  },
-  {
-    key: '12',
-    src: '/images/tatto12.png'
   },
   {
     key: '13',
@@ -63,7 +63,7 @@ const elements = [
   {
     key: '14',
     src: '/images/tatto14.png'
-  },
+  }
 ]
 
 const WorksCaroussel = () => {
@@ -71,6 +71,7 @@ const WorksCaroussel = () => {
     <Container>
       <Swiper
         slidesPerView={6}
+        autoplay
         breakpoints={{
           1460: {
             slidesPerView: 5
