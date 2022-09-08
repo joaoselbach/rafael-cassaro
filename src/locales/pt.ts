@@ -39,6 +39,7 @@ export const pt = {
 
   benefits: {
     title: 'Benefícios da tatuagem'
+    
   },
   testimonials: {
     title: 'O que dizem',

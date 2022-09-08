@@ -27,7 +27,7 @@ export const Hero = () => {
     >
       <Flex
         flex="1"
-        mt={["19rem", "10rem", 0]}
+        mt={['19rem', '10rem', 0]}
         flexDirection="column"
         alignItems={['center', 'center', 'flex-start']}
         textAlign={['center', 'center', 'inherit']}
@@ -42,10 +42,25 @@ export const Hero = () => {
         >
           {t.hero.title}
         </Heading>
-        <Text pb="2rem" color="gray.500" fontSize="1.3rem" mt="1rem" maxW={[400, 500, 700]}>
+        <Text
+          pb="2rem"
+          color="gray.500"
+          fontSize="1.3rem"
+          mt="1rem"
+          maxW={[400, 500, 700]}
+        >
           {t.hero.description}
         </Text>
-       
+        <Link href="#works" _hover={{ textDecoration: 'none' }} w="100%">
+          <SolidButton
+            w={['100%', '80%']}
+            fontSize={['.9rem', '1rem']}
+            px="1.4rem"
+            py="1.8rem"
+          >
+            {t.hero.button}
+          </SolidButton>
+        </Link>
       </Flex>
       {/* <Link alignSelf="center" href="#about">
         <Lottie
