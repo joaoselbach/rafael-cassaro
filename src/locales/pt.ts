@@ -1,4 +1,4 @@
-import { Benefits } from './../containers/benefits/index';
+import { Benefits } from './../containers/benefits/index'
 export const pt = {
   header: {
     home: 'Inicio',
@@ -38,8 +38,22 @@ export const pt = {
   },
 
   benefits: {
-    title: 'Benefícios da tatuagem'
-    
+    title: 'Benefícios da tatuagem',
+    exclusive: {
+      title: 'Projeto Exclusivo',
+      description:
+        'Sua tatuagem nunca será repetida em ninguém. Ela é sua e apenas sua.'
+    },
+    design: {
+      title: 'Design Customizado',
+      description:
+        'Você participa do processo de criação da arte para que ela fique como você a imagina.'
+    },
+    realism: {
+      title: 'Realismo de Alto Nível',
+      description:
+        'Um realismo de primeira que irá impressionar qualquer um que ver a sua tattoo.'
+    }
   },
   testimonials: {
     title: 'O que dizem',

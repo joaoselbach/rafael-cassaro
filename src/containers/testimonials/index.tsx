@@ -16,7 +16,6 @@ export const Testimonials = () => {
       id="about"
       flexDirection="column"
       justifyContent="center"
-      pt="6rem"
       alignItems="center"
       px={['1rem', '1.5rem', '3rem']}
     >

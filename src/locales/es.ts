@@ -35,6 +35,24 @@ export const es = {
   works: {
     title: 'Trabajo realizado'
   },
+  benefits: {
+    title: 'Beneficios del tatuaje',
+    exclusive: {
+      title: 'Proyecto Exclusivo',
+      description:
+        'Tu tatuaje nunca se repetirá en nadie. Ella es tuya y solo tuya.'
+    },
+    design: {
+      title: 'Diseño personalizado',
+      description:
+        'Participas en el proceso de creación del arte para que se vea como lo imaginas.'
+    },
+    realism: {
+      title: 'Realismo de alto nivel',
+      description:
+        'Un realismo de primer nivel que impresionará a cualquiera que vea tu tatuaje.'
+    }
+  },
   testimonials: {
     title: 'Lo que ellos dicen',
     nick: "¡Rafael es uno de los mejores tatuadores que conozco! Fue muy amable y entusiasta con mi idea, toda la experiencia fue genial. Volveré pronto para hacerme otro tatuaje con él. El trabajo que hizo superó todas mis expectativas. ¡Definitivamente lo recomiendo!",

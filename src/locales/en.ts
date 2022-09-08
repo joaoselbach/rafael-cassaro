@@ -24,7 +24,7 @@ export const en = {
     tatto: {
       title: '+1000 tattoos performed',
       description:
-        'All this dedicated expertise to make your tattoo look fantastic!',
+        'All this dedicated expertise to make your tattoo look fantastic!'
     },
     quality: {
       title: 'Quality Delivery',
@@ -34,6 +34,23 @@ export const en = {
   },
   works: {
     title: 'Work'
+  },
+  benefits: {
+    title: 'Benefits of tattoo',
+    exclusive: {
+      title: 'Exclusive Project',
+      description:
+        "Your tattoo will never be repeated on anyone. It's yours and yours alone."
+    },
+    design: {
+      title: 'Custom design',
+      description:
+        "You're a part of the creative process, so that your tattoo looks as you imagine it."
+    },
+    realism: {
+      title: 'Outstanding realistic designs',
+      description: 'A top-notch realism that will get you lots of compliments.'
+    }
   },
   testimonials: {
     title: 'What they say',
@@ -64,12 +81,12 @@ export const en = {
         "100% sterilized environment. You don't have to worry about your safety and health."
     },
     studio: {
-      open: "Show studio",
-      close: "Hide studio"
+      open: 'Show studio',
+      close: 'Hide studio'
     },
     map: {
-      open: "Open map",
-      close: "Hide map",
+      open: 'Open map',
+      close: 'Hide map'
     }
   },
   faq: {
@@ -77,12 +94,12 @@ export const en = {
     whatHappen: {
       title: 'What happens after I click the button?',
       description:
-        'After filling and submitting your data, you will receive an email with all the instructions and information you need to proceed with your project. Please check your SPAM folder, ok? Oh, and your data is 100% safe with me, ok?',
+        'After filling and submitting your data, you will receive an email with all the instructions and information you need to proceed with your project. Please check your SPAM folder, ok? Oh, and your data is 100% safe with me, ok?'
     },
     price: {
       title: 'How much do you charge?',
       description:
-        'Values ​​vary by project, body location and number of sessions. I need to know what and where you want to tattoo first, to give you the correct value, ok?',
+        'Values ​​vary by project, body location and number of sessions. I need to know what and where you want to tattoo first, to give you the correct value, ok?'
     },
     schedule: {
       title: 'How do I make an appointment? Do I need to pay a down payment?',
@@ -92,12 +109,12 @@ export const en = {
     day: {
       title: 'How does it work on tattoo day?',
       description:
-        'First I focus on making you as comfortable as possible. Afterwards, we finalized the last details of the artwork together. Finally, I prepare my materials, apply the decal to your skin, and then we start tattooing. I usually take a break every hour and a half, so we can rest and have a drink of water, a coffee…',
+        'First I focus on making you as comfortable as possible. Afterwards, we finalized the last details of the artwork together. Finally, I prepare my materials, apply the decal to your skin, and then we start tattooing. I usually take a break every hour and a half, so we can rest and have a drink of water, a coffee…'
     },
     hurts: {
       title: 'Does getting a tattoo hurt?',
       description:
-        "Yes, tattooing hurts, but in most cases it's a very bearable pain. Some places naturally hurt more than others, so if the pain is too much of a problem for you, I'll help you choose a quiet spot to get tattooed.",
+        "Yes, tattooing hurts, but in most cases it's a very bearable pain. Some places naturally hurt more than others, so if the pain is too much of a problem for you, I'll help you choose a quiet spot to get tattooed."
     },
     idea: {
       title: 'I want to get a tattoo, but I have no idea of ​​art!',
@@ -108,7 +125,7 @@ export const en = {
       title:
         "I've had some bad experiences with other artists, now I'm afraid to do another one!",
       description:
-        'Unfortunately, there are many tattooists who do not take their profession seriously and end up delivering a mediocre result and a bad experience. You can be sure that I will dedicate myself completely so that you have a fantastic tattoo and a first class experience.',
+        'Unfortunately, there are many tattooists who do not take their profession seriously and end up delivering a mediocre result and a bad experience. You can be sure that I will dedicate myself completely so that you have a fantastic tattoo and a first class experience.'
     }
   }
 }
