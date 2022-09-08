@@ -21,7 +21,12 @@ export const Benefits = () => {
       px={['1rem', '1.5rem', '3rem']}
       alignItems="center"
     >
-      <Text textAlign="center" color="gray.50" fontSize="2rem" letterSpacing="8px">
+      <Text
+        textAlign="center"
+        color="gray.50"
+        fontSize="2rem"
+        letterSpacing="8px"
+      >
         {t.benefits.title}
       </Text>
 
@@ -30,18 +35,18 @@ export const Benefits = () => {
         mt="4rem"
         flexDirection={['column', 'column', 'row']}
         textAlign="center"
-        gap={['1rem', "3rem"]}
+        gap={['1rem', '3rem']}
       >
-        <TextBoxIconBg title={t.benefits.exclusive.title}>
-          {t.benefits.exclusive.description}
+        <TextBoxIconBg title="Lorem ipsum">
+          lorem ipsum dolor sit amet consectetur adipiscing elit
         </TextBoxIconBg>
 
-        <TextBoxIconBg title={t.benefits.design.title}>
-          {t.benefits.design.description}
+        <TextBoxIconBg title="Lorem ipsum">
+          lorem ipsum dolor sit amet consectetur adipiscing elit
         </TextBoxIconBg>
 
-        <TextBoxIconBg title={t.benefits.realism.title}>
-          {t.benefits.realism.description}
+        <TextBoxIconBg title="Lorem ipsum">
+          lorem ipsum dolor sit amet consectetur adipiscing elit
         </TextBoxIconBg>
       </Flex>
     </Flex>

@@ -12,7 +12,7 @@ export const TextBoxIconBg = ({ title, children }: TextBoxIconProps) => {
       flexDirection="column"
       gap=".6rem"
       bgColor="gray.700"
-      p="1.2rem"
+      p="1.5rem"
       borderRadius=".5rem"
       maxW={250}
       transition=".2s all ease"

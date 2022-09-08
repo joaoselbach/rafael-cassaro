@@ -51,7 +51,7 @@ export const Hero = () => {
         >
           {t.hero.description}
         </Text>
-        <Link href="#works" _hover={{ textDecoration: 'none' }} w="100%">
+        {/* <Link href="#works" _hover={{ textDecoration: 'none' }} w="100%">
           <SolidButton
             w={['100%', '80%']}
             fontSize={['.9rem', '1rem']}
@@ -60,7 +60,7 @@ export const Hero = () => {
           >
             {t.hero.button}
           </SolidButton>
-        </Link>
+        </Link> */}
       </Flex>
       {/* <Link alignSelf="center" href="#about">
         <Lottie
