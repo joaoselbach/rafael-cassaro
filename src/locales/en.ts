@@ -7,9 +7,9 @@ export const en = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'A realistic tattoo that you will be proud to show off.',
+    title: 'Get your tattoo realistic the right way.',
     description:
-      'Impress people and get compliments wherever you go with a tattoo made exclusively for you.',
+      "A quality service, a good experience and a result that will leave you satisfied. Meet my work and decide if I'm the right tattoo artist for you.",
     button: 'Meet my works'
   },
   about: {

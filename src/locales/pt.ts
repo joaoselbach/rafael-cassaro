@@ -8,9 +8,9 @@ export const pt = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'Uma tatuagem realista que você terá orgulho de mostrar.',
+    title: 'Faça a sua tatuagem realista do jeito certo.',
     description:
-      'Impressione as pessoas e receba elogios por onde passar com uma tatuagem feita exclusivamente para você.',
+      'Um serviço prestado com qualidade, uma boa experiência e um resultado que te deixará satisfeito. Conheça o meu trabalho e decida se eu sou o tatuador certo para você.',
     button: 'Conheça meus trabalhos'
   },
   about: {
