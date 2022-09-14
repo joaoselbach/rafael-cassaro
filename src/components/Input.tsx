@@ -16,7 +16,7 @@ import { useRouter } from 'next/router'
 interface InputProps extends ChakraInputProps {
   name: string
   label?: string
-  error?: FieldError
+  error?: any
   icon: any
   placeholder: string
   type: string

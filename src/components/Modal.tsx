@@ -175,6 +175,9 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
                 icon={RiUser2Fill}
                 error={errors.name}
                 {...register('name')}
+                onBlur={() => setFillName(false)}
+                onFocus={() => setFillName(true)}
+                stateIcon={fillName}
               />
 
               <Input
@@ -185,6 +188,9 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
                 icon={RiUser2Fill}
                 error={errors.email}
                 {...register('email')}
+                onBlur={() => setFillEmail(false)}
+                onFocus={() => setFillEmail(true)}
+                stateIcon={fillEmail}
               />
 
               <Input
@@ -195,6 +201,9 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
                 icon={RiUser2Fill}
                 error={errors.phone}
                 {...register('phone')}
+                onBlur={() => setFillPhone(false)}
+                onFocus={() => setFillPhone(true)}
+                stateIcon={fillPhone}
               />
 
               <Button
