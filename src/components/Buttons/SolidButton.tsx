@@ -1,33 +1,41 @@
-import { Button as ChakraButton, Image } from '@chakra-ui/react'
+import { Button as ChakraButton, ButtonProps as ChakraButtonProps } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
-interface ButtonProps {
+type ButtonProps = {
   children: ReactNode
-  fontSize: any
+  bgColor?: string
+  mt?: any
   w?: any
-  mt?: string
-  px: string
-  py: any
-}
+  maxWidth?: number
+} & ChakraButtonProps
 
-export const SolidButton = ({ children, fontSize, w, mt, py, px }: ButtonProps) => {
+export const SolidButton = ({
+  children,
+  bgColor = 'gold.500' ,
+  mt,
+  w,
+  maxWidth,
+  ...rest
+}: ButtonProps) => {
   return (
     <ChakraButton
-      px={px}
-      py={py}
-      w={w}
-      mt={mt}
-      fontSize={fontSize}
-      bgColor="gold.500"
-      textTransform="uppercase"
       gap=".5rem"
-      color="#fff"
+      py={["1.8rem", "1.8rem", "1.8rem", '1.8rem', "2rem"]}
+      px="1.4rem"
+      mt={mt}
+      w={w}
+      maxWidth={maxWidth}
       alignItems="center"
+      borderRadius=".4rem"
       fontWeight="bold"
+      fontSize={['.9rem', '.95rem', '.95rem', '.95rem', '1rem']}
+      color="gray.50"
+      bgColor={bgColor}
       transition="0.2s all ease"
-      _hover={{ filter: 'drop-shadow(0px 0px 12px #c2ad6045)' }}
-      _active={{ opacity: 0.9 }}
+      _hover={{ filter: 'brightness(92%)' }}
+      _active={{ filter: 'brightness(86%)' }}
       _focus={{ border: 'none' }}
+      {...rest}
     >
       {children}
     </ChakraButton>

@@ -8,15 +8,19 @@ import { Header } from '~/components/Header'
 import '../../node_modules/swiper/swiper-bundle.min.css'
 import '../../node_modules/swiper/swiper.min.css'
 import 'react-awesome-lightbox/build/style.css'
+import { ApolloProvider } from '@apollo/client'
+import { client } from '~/lib/apollo'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <ChakraProvider theme={theme}>
+    <ApolloProvider client={client}>
+      <ChakraProvider theme={theme}>
         <Header />
         <SimpleReactLightbox>
           <Component {...pageProps} />
         </SimpleReactLightbox>
-    </ChakraProvider>
+      </ChakraProvider>
+    </ApolloProvider>
   )
 }
 

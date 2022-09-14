@@ -41,15 +41,16 @@ export const About = () => {
         </Text>
       </Flex>
       <Flex
-        alignItems="center"
+        alignItems={['center', 'center', 'flex-start']}
         mt="2rem"
         flexDirection={['column', 'column', 'row']}
         textAlign="center"
         gap={['1rem']}
       >
-        <TextBoxIcon title={t.about.years.title}>
-          {t.about.years.description}
+        <TextBoxIcon title={t.about.quality.title}>
+          {t.about.quality.description}
         </TextBoxIcon>
+
         <Divider
           display={['block', 'block', 'none']}
           orientation="horizontal"
@@ -66,9 +67,10 @@ export const About = () => {
           h="80px"
           bgColor="gray.500"
         />
-        <TextBoxIcon title={t.about.tatto.title}>
-          {t.about.tatto.description}
+        <TextBoxIcon title={t.about.years.title}>
+          {t.about.years.description}
         </TextBoxIcon>
+
         <Divider
           display={['block', 'block', 'none']}
           orientation="horizontal"
@@ -85,8 +87,8 @@ export const About = () => {
           h="80px"
           bgColor="gray.500"
         />
-        <TextBoxIcon title={t.about.quality.title}>
-          {t.about.quality.description}
+        <TextBoxIcon title={t.about.tatto.title}>
+          {t.about.tatto.description}
         </TextBoxIcon>
       </Flex>
     </Flex>

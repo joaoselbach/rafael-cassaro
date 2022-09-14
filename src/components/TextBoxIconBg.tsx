@@ -12,15 +12,17 @@ export const TextBoxIconBg = ({ title, children }: TextBoxIconProps) => {
       flexDirection="column"
       gap=".6rem"
       bgColor="gray.700"
-      p="1.5rem"
+      py="2rem"
+      px="1rem"
       borderRadius=".5rem"
-      maxW={250}
+      minH={[140, 160, 170]}
+      maxW={300}
       transition=".2s all ease"
       _hover={{ transform: 'translateY(-.2rem)' }}
     >
       <Flex alignItems="center" gap=".5rem">
         <Image src="/images/check.svg" />
-        <Text fontWeight={400}>{title}</Text>
+        <Text fontWeight={400} >{title}</Text>
       </Flex>
       <Text textAlign="center" color="gray.400">
         {children}

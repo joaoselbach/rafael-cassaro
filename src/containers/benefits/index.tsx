@@ -21,32 +21,23 @@ export const Benefits = () => {
       px={['1rem', '1.5rem', '3rem']}
       alignItems="center"
     >
-      <Text
-        textAlign="center"
-        color="gray.50"
-        fontSize="2rem"
-        letterSpacing="8px"
-      >
-        {t.benefits.title}
-      </Text>
-
       <Flex
         alignItems="flex-start"
-        mt="4rem"
+        mt="1rem"
         flexDirection={['column', 'column', 'row']}
         textAlign="center"
         gap={['1rem', '3rem']}
       >
-        <TextBoxIconBg title="Lorem ipsum">
-          lorem ipsum dolor sit amet consectetur adipiscing elit
+        <TextBoxIconBg title={t.benefits.first.title}>
+          {t.benefits.first.description}
         </TextBoxIconBg>
 
-        <TextBoxIconBg title="Lorem ipsum">
-          lorem ipsum dolor sit amet consectetur adipiscing elit
+        <TextBoxIconBg title={t.benefits.sec.title}>
+          {t.benefits.sec.description}
         </TextBoxIconBg>
 
-        <TextBoxIconBg title="Lorem ipsum">
-          lorem ipsum dolor sit amet consectetur adipiscing elit
+        <TextBoxIconBg title={t.benefits.third.title}>
+          {t.benefits.third.description}
         </TextBoxIconBg>
       </Flex>
     </Flex>

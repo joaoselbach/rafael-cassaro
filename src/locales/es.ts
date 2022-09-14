@@ -16,41 +16,37 @@ export const es = {
     title: 'Sobre mi',
     description:
       "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Nueva Zelanda, Brasil, Europa y muchos otros países. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida",
+    quality: {
+      title: 'Especialista en realismo',
+      description:
+        'Realizo piezas realistas y mi objetivo es que tu tatuaje luzca aún mejor de lo que imaginabas.'
+    },
     years: {
       title: '+20 años de experiencia',
       description:
-        'Estás seguro, en manos de un profesional que sabe lo que hace.'
+        'Estás seguro en manos de un profesional que sabe lo que hace.'
     },
     tatto: {
-      title: '+1000 tatuajes realizados',
+      title: '+1000 tatuajes hechos',
       description:
-        '¡Toda esta experiencia dedicada para hacer que tu tatuaje luzca fantástico!',
+        'Toda esta experiencia dedicada a usted y su proyecto.',
     },
-    quality: {
-      title: 'Entrega de calidad',
-      description:
-        'Un resultado que te dejará 100% satisfecho, con expectativas superadas.'
-    }
   },
   works: {
     title: 'Trabajo realizado'
   },
   benefits: {
-    title: 'Beneficios del tatuaje',
-    exclusive: {
-      title: 'Proyecto Exclusivo',
-      description:
-        'Tu tatuaje nunca se repetirá en nadie. Ella es tuya y solo tuya.'
+    first: {
+      title: "Proyecto personalizado",
+      description: "Tráeme tus ideas y te ayudaré a transformarlas en un tatuaje único y personal."
     },
-    design: {
-      title: 'Diseño personalizado',
-      description:
-        'Participas en el proceso de creación del arte para que se vea como lo imaginas.'
+    sec: {
+      title: "Diseño co-creado",
+      description: "Eres parte del proceso creativo. Serás escuchado. ¡Tu opinion importa!"
     },
-    realism: {
-      title: 'Realismo de alto nivel',
-      description:
-        'Un realismo de primer nivel que impresionará a cualquiera que vea tu tatuaje.'
+    third: {
+      title: "Ilustraciones detalladas",
+      description: "Un tatuaje bien hecho que estarás orgulloso de tener en tu piel."
     }
   },
   testimonials: {
@@ -127,6 +123,44 @@ export const es = {
         'He tenido algunas malas experiencias con otros artistas, ¡ahora tengo miedo de hacer otra!',
       description:
         'Desafortunadamente, hay muchos tatuadores que no se toman en serio su profesión y terminan entregando un resultado mediocre y una mala experiencia. Puedes estar seguro de que me dedicaré por completo para que tengas un tatuaje fantástico y una experiencia de primera.',
+    }
+  },
+  buttonContact: "Button",
+  modal: {
+    title: "Preencha o formulário pra entrar en contacto",
+    register: {
+      name: {
+        label: 'Nombre',
+        placeholder: 'Su nombre'
+      },
+      email: {
+        label: 'Correo electrónico',
+        placeholder: 'email@email.com'
+      },
+
+      phone: {
+        label: 'Teléfono',
+        placeholder: '(99) 999 99 99 99'
+      },
+      button: 'Enviar'
+    },
+    success: {
+      title: 'Éxito!',
+      description: '¡Hemos enviado un mensaje a tu correo electrónico! Por favor revise su bandeja de entrada.',
+      button: 'Cerca'
+    }
+  },
+  errorInput: {
+    null: {
+      name: 'Nombre requerido',
+      email: 'Correo electrónico requerido',
+      company: 'Nombre de empresa requerido',
+      phone: 'Teléfono requirido',
+      message: 'Mensaje requerido'
+    },
+    invalid: {
+      email: 'Correo electrónico invalido',
+      phone: 'Numero de telefono invalido'
     }
   }
 }
