@@ -14,6 +14,7 @@ export const Footer = () => {
           <Image src="/images/facebook.svg" />
         </Link>
         <Link
+        href="https://www.instagram.com/rafaelcassaro/"
           transition=".2 all ease"
           _hover={{ transform: 'translateY(-2px)' }}
         >

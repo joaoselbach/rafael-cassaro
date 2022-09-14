@@ -127,7 +127,7 @@ export const en = {
   },
   buttonContact: "Button",
   modal: {
-    title: "Fill the form to get in touch",
+    title: "After filling in these fields, you will receive an email from me so that we can talk about your project and schedule your session. And rest assured, your data is 100% safe with me.",
     register: {
       name: {
         label: 'Name',
@@ -146,7 +146,8 @@ export const en = {
     },
     success: {
       title: 'Success!',
-      description: 'We have sent a message to your email! Please check your inbox.',
+      description: 'We will definitely make a very beautiful project together. Please check your registered email address that you have received my email.',
+      instagram: 'Also follow me on instagram. There I post all the tattoos I do and also the backstage of my work',
       button: 'Close'
     }
   },

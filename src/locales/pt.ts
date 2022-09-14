@@ -130,7 +130,7 @@ export const pt = {
   },
   buttonContact: "Button",
   modal: {
-    title: "Preencha o formulário pra entrar em contato",
+    title: "Após preencher esses campos, você receberá um email meu, para que possamos conversar sobre o seu projeto e agendar a sua sessão. E fique tranquilo, que seus dados estão 100% seguros comigo",
     register: {
       name: {
         label: 'Nome',
@@ -148,8 +148,9 @@ export const pt = {
       button: 'Enviar'
     },
     success: {
-      title: 'Sucesso!',
-      description: 'Enviamos uma mensagem ao seu e-mail! Por favor cheque seu inbox.',
+      title: 'Muito obrigado!',
+      description: 'Com certeza faremos um projeto muito bonito juntos. Por favor, verifique no seu endereço de email cadastrado se você recebeu o meu email',
+      instagram: 'Me siga também no instagram. Por lá posto todas as tatuagens que faço e também os bastidores do meu trabalho',
       button: "Fechar",
     }
   },

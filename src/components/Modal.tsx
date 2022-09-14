@@ -27,7 +27,10 @@ import {
   Flex,
   Text,
   Heading,
-  Button
+  Button,
+  Link,
+  Image,
+  Highlight
 } from '@chakra-ui/react'
 import { InputTest } from './InputTest'
 import { pt } from '~/locales/pt'
@@ -136,17 +139,17 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
 
   return (
     <>
-      <ChakraModal isCentered isOpen={isOpen} onClose={onClose}>
+      <ChakraModal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent mx=".5rem" bgColor="gray.800">
           <ModalHeader
             justifyContent="center"
             alignItems="center"
-            mt="1.5rem"
+            mt="1.8rem"
             textAlign="center"
           >
             {statusModal === 'register' ? (
-              <Text>{t.modal.title}</Text>
+              <Text fontSize="1.15rem">{t.modal.title}</Text>
             ) : (
               <Lottie
                 isClickToPauseDisabled
@@ -233,7 +236,18 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
               <Heading>{t.modal.success.title}</Heading>
               <Text color="gray.400" mt="1rem">
                 {t.modal.success.description}
+                <br />
+                <br />
+                <Highlight query="instagram" styles={{ color: "#fff", fontWeight: 500 }}>{t.modal.success.instagram}</Highlight>
               </Text>
+              <Link
+              href="https://www.instagram.com/rafaelcassaro/"
+                mt="1rem"
+                transition=".2 all ease"
+                _hover={{ transform: 'translateY(-2px)' }}
+              >
+                <Image w="2rem" src="/images/insta.svg" />
+              </Link>
               <SolidButton onClick={onClose} mt="2.4rem" w="100%">
                 {t.modal.success.button}
               </SolidButton>

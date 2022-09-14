@@ -127,40 +127,40 @@ export const es = {
   },
   buttonContact: "Button",
   modal: {
-    title: "Preencha o formulário pra entrar en contacto",
+    title: "Después de completar estos campos, recibirás un correo electrónico mío para que podamos hablar sobre tu proyecto y programar tu sesión. Y tenga la seguridad de que sus datos están 100% seguros conmigo.",
     register: {
-      name: {
-        label: 'Nombre',
-        placeholder: 'Su nombre'
+    name: {
+      label: 'Nombre',
+      placeholder: 'Su nombre'
       },
-      email: {
-        label: 'Correo electrónico',
-        placeholder: 'email@email.com'
+    email: {
+      label: 'Correo electrónico',
+      placeholder: 'email@email.com'
       },
 
-      phone: {
-        label: 'Teléfono',
-        placeholder: '(99) 999 99 99 99'
+    phone: {
+      label: 'Teléfono',
+      placeholder: '(99) 999 99 99 99'
       },
-      button: 'Enviar'
+    button: 'Enviar'
     },
-    success: {
-      title: 'Éxito!',
-      description: '¡Hemos enviado un mensaje a tu correo electrónico! Por favor revise su bandeja de entrada.',
-      button: 'Cerca'
-    }
-  },
-  errorInput: {
-    null: {
-      name: 'Nombre requerido',
-      email: 'Correo electrónico requerido',
-      company: 'Nombre de empresa requerido',
-      phone: 'Teléfono requirido',
-      message: 'Mensaje requerido'
-    },
-    invalid: {
-      email: 'Correo electrónico invalido',
-      phone: 'Numero de telefono invalido'
-    }
+  success: {
+    title: 'Muchas gracias',
+    description: 'Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico.',
+    instagram: 'Sígueme también en instagram. Allí publico todos los tatuajes que hago y también el backstage de mi trabajo.',
   }
+  },
+errorInput: {
+  null: {
+    name: 'Nombre requerido',
+      email: 'Correo electrónico requerido',
+        company: 'Nombre de empresa requerido',
+          phone: 'Teléfono requirido',
+            message: 'Mensaje requerido'
+  },
+  invalid: {
+    email: 'Correo electrónico invalido',
+      phone: 'Numero de telefono invalido'
+  }
+}
 }
