@@ -2,6 +2,7 @@ import { Flex, Text } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import WorksCaroussel from '~/components/Caroussel/works'
 import translates from '~/locales'
+import { Benefits } from '../benefits'
 
 export const Works = () => {
   const router = useRouter()
@@ -30,6 +31,7 @@ export const Works = () => {
         {t.works.title}
       </Text>
       <WorksCaroussel />
+      <Benefits />
     </Flex>
   )
 }

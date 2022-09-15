@@ -1,10 +1,12 @@
-import { Divider, Flex, Text } from '@chakra-ui/react'
+import { Flex, useDisclosure } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
-import { TextBoxIcon } from '~/components/TextBoxIcon'
+import { SolidButton } from '~/components/Buttons/SolidButton'
+import { Modal } from '~/components/Modal'
 import { TextBoxIconBg } from '~/components/TextBoxIconBg'
 import translates from '~/locales'
 
 export const Benefits = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const router = useRouter()
 
   const { locale } = router
@@ -16,8 +18,8 @@ export const Benefits = () => {
       id="about"
       flexDirection="column"
       justifyContent="center"
-      pt={['4rem', '5rem', '10rem']}
-      pb="8rem"
+      pt={['2rem', '2rem', '4rem']}
+      pb="4rem"
       px={['1rem', '1.5rem', '3rem']}
       alignItems="center"
     >
@@ -40,6 +42,10 @@ export const Benefits = () => {
           {t.benefits.third.description}
         </TextBoxIconBg>
       </Flex>
+      <SolidButton w={['100%', '80%', '45%']} mt="4rem" onClick={onOpen}>
+        {t.buttonContact}
+      </SolidButton>
+      <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
     </Flex>
   )
 }

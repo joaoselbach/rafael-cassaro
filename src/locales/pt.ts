@@ -8,19 +8,19 @@ export const pt = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'Faça a sua tatuagem realista do jeito certo.',
+    title: 'A sua nova tatuagem realista de espera.',
     description:
-      'Um serviço prestado com qualidade, uma boa experiência e um resultado que te deixará satisfeito. Conheça o meu trabalho e decida se eu sou o tatuador certo para você.',
+      'Conheça o meu trabalho e decida se eu sou o tatuador certo para você. ',
     button: 'Conheça meus trabalhos'
   },
   about: {
     title: 'Sobre mim',
     description:
-      'Me chamo Rafael Cassaro e viajei o mundo tatuando. Já trabalhei na Nova Zelândia, Brasil, Europa e muito outros países. Agora estou no Stefano’s Tattoo Studio, um dos melhores estúdios da Flórida',
+      "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Nueva Zelanda, Brasil, Europa y muchos otros lugares. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida.",
     quality: {
       title: 'Especialista em Realismo',
       description:
-        'Meu objetivo é que sua tatuagem fique melhor do que você imaginou'
+        'Eu faço tatuagens realistas e meu objetivo é que sua tatuagem fique melhor do que você imaginou.'
     },
     years: {
       title: '+20 anos de experiência',
@@ -48,7 +48,7 @@ export const pt = {
     },
     third: {
       title: "Obra detalhada",
-      description: "Uma tatuagem bem feita que você terá orgulho de ter na pele."
+      description: "Ficará feliz no lugar de ter orgulho."
     }
   },
 
@@ -128,9 +128,9 @@ export const pt = {
         'Infelizmente existem muitos tatuadores que não levam a profissão a sério e acabam entregando um resultado medíocre e uma experiência ruim. Você pode ter certeza que irei me dedicar completamente para que você tenha uma tatuagem fantástica e uma experiência de primeira.'
     }
   },
-  buttonContact: "Button",
+  buttonContact: "Agendar sessão",
   modal: {
-    title: "Após preencher esses campos, você receberá um email meu, para que possamos conversar sobre o seu projeto e agendar a sua sessão. E fique tranquilo, que seus dados estão 100% seguros comigo",
+    title: "Após preencher esses campos, você receberá um email meu, para que possamos conversar sobre o seu projeto e agendar a sua sessão. E fique tranquilo, seus dados estão 100% seguros comigo.",
     register: {
       name: {
         label: 'Nome',
@@ -149,8 +149,8 @@ export const pt = {
     },
     success: {
       title: 'Muito obrigado!',
-      description: 'Com certeza faremos um projeto muito bonito juntos. Por favor, verifique no seu endereço de email cadastrado se você recebeu minha mensagem. É por lá que vamos conversar sobre o que você quer tatuar e dar prosseguimento ao seu agendamento. Lembre-se de checar o SPAM e também outras pastas',
-      instagram: 'Me siga também no instagram. Por lá posto todas as tatuagens que faço e também os bastidores do meu trabalho',
+      description: 'Com certeza faremos um projeto muito bonito juntos. Por favor, verifique no seu endereço de email cadastrado se você recebeu minha mensagem. É por lá que vamos conversar sobre o que você quer tatuar e dar prosseguimento ao seu agendamento. Lembre-se de checar o SPAM e também outras pastas.',
+      instagram: 'Me siga também no instagram. Por lá posto todas as tatuagens que faço e também os bastidores do meu trabalho.',
       button: "Fechar",
     }
   },

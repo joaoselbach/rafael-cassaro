@@ -7,15 +7,15 @@ export const en = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'Get your tattoo realistic the right way.',
+    title: 'Your new realistic tattoo awaits you.',
     description:
-      "A quality service, a good experience and a result that will leave you satisfied. Meet my work and decide if I'm the right tattoo artist for you.",
+      "Get to know my work and discover if I'm the right tattoo artist for you.",
     button: 'Meet my works'
   },
   about: {
     title: 'About me',
     description:
-      "My name is Rafael Cassaro and I traveled the world tattooing. I have worked in New Zealand, Brazil, Europe and many other countries. Now I'm at Stefano's Tattoo Studio, one of the best studios in Florida'",
+      "My name is Rafael Cassaro and I traveled the world tattooing. I've worked in New Zealand, Brazil, Europe and many other places. Now I'm at Stefano's Tattoo Studio, one of the best studios in Florida.",
     quality: {
       title: 'Realism Specialist',
       description:
@@ -46,7 +46,7 @@ export const en = {
     },
     third: {
       title: "Detailed Artwork",
-      description: "A well-done tattoo you'll be proud to have on your skin."
+      description: "You will be happy instead of being proud.",
     }
   },
   testimonials: {
@@ -59,23 +59,23 @@ export const en = {
       "As soon as i was his work, i immediately fell in love with his style. I contacted him by message and he was very invested and kind from the start. This was one of the best tattoo experiences i had. He understood exactly what i was looking ofr and the tattoo was just beyond my expectations. If you're looking for a true artist, don't hesitate to contact him."
   },
   location: {
-    title: 'Where I work?',
+    title: 'Where do I Work?',
     description:
-      "I work at Stefano's Tattoo Studio, one of the best studios in Florida. Award-winning location in Fort Lauderdale, right next to the beach.",
+      "I work at Stefano's Tattoo Studio, one of the best studios in Florida. Prime location in Fort Lauderdale, right next to the beach.",
     confort: {
       title: 'Comfort',
       description:
-        'A first-class structure, made to make you comfortable and relaxed.'
+        'A first-class shop, made to make you comfortable and relaxed, even in long hours sessions.'
     },
     professional: {
       title: 'Professional',
       description:
-        'Only the best materials and equipment on the market, because you deserve the best.'
+        'We use only the best material and equipments there is, because you deserve the best.'
     },
     clean: {
       title: 'Clean',
       description:
-        "100% sterilized environment. You don't have to worry about your safety and health."
+        "100% sterilized environment. You don't have to worry about your health and safety."
     },
     studio: {
       open: 'Show studio',
@@ -125,7 +125,7 @@ export const en = {
         'Unfortunately, there are many tattooists who do not take their profession seriously and end up delivering a mediocre result and a bad experience. You can be sure that I will dedicate myself completely so that you have a fantastic tattoo and a first class experience.'
     }
   },
-  buttonContact: "Button",
+  buttonContact: "Book Session",
   modal: {
     title: "After filling in these fields, you will receive an email from me so that we can talk about your project and schedule your session. And rest assured, your data is 100% safe with me.",
     register: {
@@ -137,7 +137,6 @@ export const en = {
         label: 'E-mail',
         placeholder: 'email@email.com'
       },
-
       phone: {
         label: 'Phone',
         placeholder: '(99) 999 99 99 99'
@@ -146,9 +145,8 @@ export const en = {
     },
     success: {
       title: 'Success!',
-      description: "We will definitely make a very beautiful project together. Please check your registered email address that you have received my message. That's where we'll talk about what you want to tattoo and proceed with your appointment. Remember to check SPAM and also other folders",
-      instagram: 'Also follow me on instagram. There I post all the tattoos I do and also the backstage of my work',
-      button: 'Close'
+      description: "We will definitely make a very beautiful project together. Please check your registered email address that you have received my message. That's where we'll talk about what you want to tattoo and proceed with your appointment. Remember to check SPAM and also other folders.",
+      instagram: 'Also follow me on instagram. There I post all the tattoos I do and also the backstage of my work.',
     }
   },
   errorInput: {

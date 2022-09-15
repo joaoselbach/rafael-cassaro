@@ -14,8 +14,9 @@ export const TextBoxIconBg = ({ title, children }: TextBoxIconProps) => {
       bgColor="gray.700"
       py="2rem"
       px="1rem"
+      minW={300}
       borderRadius=".5rem"
-      minH={[140, 160, 170]}
+      minH={[140, 160, 170, 170, 150]}
       maxW={300}
       transition=".2s all ease"
       _hover={{ transform: 'translateY(-.2rem)' }}

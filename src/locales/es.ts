@@ -46,7 +46,7 @@ export const es = {
     },
     third: {
       title: "Ilustraciones detalladas",
-      description: "Un tatuaje bien hecho que estarás orgulloso de tener en tu piel."
+      description: "Serás feliz en lugar de estar orgulloso."
     }
   },
   testimonials: {
@@ -125,7 +125,7 @@ export const es = {
         'Desafortunadamente, hay muchos tatuadores que no se toman en serio su profesión y terminan entregando un resultado mediocre y una mala experiencia. Puedes estar seguro de que me dedicaré por completo para que tengas un tatuaje fantástico y una experiencia de primera.',
     }
   },
-  buttonContact: "Button",
+  buttonContact: "Programar sesión",
   modal: {
     title: "Después de completar estos campos, recibirás un correo electrónico mío para que podamos hablar sobre tu proyecto y programar tu sesión. Y tenga la seguridad de que sus datos están 100% seguros conmigo.",
     register: {
@@ -146,7 +146,7 @@ export const es = {
     },
   success: {
     title: 'Muchas gracias',
-    description: "Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico. Ahí es donde hablaremos de lo que te quieres tatuar y procederemos con tu cita. Recuerda revisar SPAM y también otras carpetas",
+    description: "Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico. Ahí es donde hablaremos de lo que te quieres tatuar y procederemos con tu cita. Recuerda revisar SPAM y también otras carpetas.",
     instagram: 'Sígueme también en instagram. Allí publico todos los tatuajes que hago y también el backstage de mi trabajo.',
     button: "Cerca",
   }

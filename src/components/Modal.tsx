@@ -54,7 +54,6 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
 
   const router = useRouter()
   const toast = useToast()
-  const [statusModal, setStatusModal] = useState('register')
   const [fillEmail, setFillEmail] = useState(false)
   const [fillName, setFillName] = useState(false)
   const [fillPhone, setFillPhone] = useState(false)
@@ -117,17 +116,7 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
     }
   }, [data, error])
 
-  const handleCustomer: SubmitHandler<CustomerFormData> = async values => {
-    await new Promise(resolve => setTimeout(resolve, 2000))
-
-    console.log(values)
-  }
-
   const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
-    // await new Promise(resolve => setTimeout(resolve, 2000))
-
-    // console.log(values)
-
     await createCustomer({
       variables: {
         ...values

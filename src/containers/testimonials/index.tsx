@@ -8,7 +8,6 @@ import { Modal } from '~/components/Modal'
 
 export const Testimonials = () => {
   const router = useRouter()
-  const { isOpen, onOpen, onClose } = useDisclosure()
 
   const { locale } = router
   const { en, es, pt } = translates
@@ -21,6 +20,7 @@ export const Testimonials = () => {
       justifyContent="center"
       alignItems="center"
       px={['1rem', '1.5rem', '3rem']}
+      pt="2rem"
     >
       <Text
         color="gray.50"
@@ -33,10 +33,6 @@ export const Testimonials = () => {
         {t.testimonials.title}
       </Text>
       <TestimonialCaroussel />
-      <SolidButton w={['100%', '80%', '30%']} mt="4rem" onClick={onOpen}>
-        {t.buttonContact}
-      </SolidButton>
-      <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
     </Flex>
   )
 }

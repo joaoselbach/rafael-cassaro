@@ -13,7 +13,6 @@ import { Faq } from '~/containers/faq'
 import { Footer } from '~/containers/footer'
 import translates from '~/locales'
 import { useRouter } from 'next/router'
-import { Benefits } from '~/containers/benefits'
 
 export const Home = () => {
   const [showMap, setShowMap] = useState(false)
@@ -35,10 +34,10 @@ export const Home = () => {
         <Box
           backgroundImage={[
             '/images/bgM.png',
-            '/images/bgMedium.png',
-            '/images/bgMedium.png',
-            '/images/bgMedium.png',
-            '/images/bgMedium.png',
+            '/images/bgMediumTest.png',
+            '/images/bgMediumTest.png',
+            '/images/bgMediumTest.png',
+            '/images/bgMediumTest.png',
             '/images/bg2.png'
           ]}
           backgroundSize={["contain", "cover", "cover", "cover"]}
@@ -52,7 +51,6 @@ export const Home = () => {
         </Box>
         <Works />
         <Box maxW={1600} color="#c2b27a" margin="0 auto">
-          <Benefits />
           <Testimonials />
           <Location />
         </Box>

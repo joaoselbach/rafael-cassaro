@@ -42,9 +42,6 @@ export const Faq = () => {
         <Accordion title={t.faq.day.title}>
           {t.faq.day.description}
         </Accordion>
-        <Accordion title={t.faq.hurts.title}>
-          {t.faq.hurts.description}
-        </Accordion>
         <Accordion title={t.faq.idea.title}>
           {t.faq.idea.description}
         </Accordion>

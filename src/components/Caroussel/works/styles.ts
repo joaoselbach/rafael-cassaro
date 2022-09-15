@@ -36,11 +36,11 @@ export const Container = styled.div`
     cursor: pointer;
 
     @media (max-width: 1468px) {
-      right: 44%
+      right: 45%
     }
 
     @media (max-width: 868px) {
-      right: 41%
+      right: 40%
     }
 
     @media (max-width: 460px) {
@@ -59,11 +59,11 @@ export const Container = styled.div`
     cursor: pointer;
 
     @media (max-width: 1468px) {
-      left: 44%
+      left: 45%
     }
 
     @media (max-width: 868px) {
-      left: 41%
+      left: 40%
     }
 
     @media (max-width: 460px) {

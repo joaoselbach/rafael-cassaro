@@ -1,11 +1,15 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Box, Flex, Image, Text, VStack } from '@chakra-ui/react'
+import { Box, Flex, Image, Text, useDisclosure, VStack } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import { SolidButton } from '~/components/Buttons/SolidButton'
+import { Modal } from '~/components/Modal'
 import translates from '~/locales'
 
 export const Location = () => {
   const router = useRouter()
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
   const [showStudio, setShowStudio] = useState(false)
 
   const { locale } = router
@@ -23,7 +27,7 @@ export const Location = () => {
       px={['1rem', '1.5rem', '3rem']}
     >
       <Flex position="relative">
-        <Image w={['100%', '60%', '60%', '80%']} src="/images/studio.png" />
+        <Image w={['100%', '60%', '60%', "80%", '100%']} src="/images/studio.png" />
         <Box
           position="absolute"
           display="flex"
@@ -31,7 +35,7 @@ export const Location = () => {
           borderRadius=".4rem"
           h={showStudio === false ? '100%' : '8%'}
           bottom="0"
-          w={['100%', '60%', '60%', '80%']}
+          w={['100%', '60%', '60%', '80%', '100%']}
           mt="-1px"
           justifyContent="center"
           backgroundColor="#000000cf"
@@ -129,8 +133,13 @@ export const Location = () => {
           >
             {t.location.clean.description}
           </Text>
+          <SolidButton w={['100%', '100%', '100%']} mt="2.5rem" onClick={onOpen}>
+        {t.buttonContact}
+      </SolidButton>
+      <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
         </Flex>
       </VStack>
+
     </Flex>
   )
 }
