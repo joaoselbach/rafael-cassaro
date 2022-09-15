@@ -61,7 +61,7 @@ export const Header = () => {
         margin="0 auto"
         px={['.6rem', '2rem', '3rem']}
       >
-        <ChakraLink display="flex" href="#home" _active={{ opacity: 0.8 }}>
+        <ChakraLink display="flex" href="/#home" _active={{ opacity: 0.8 }}>
           <Image src="/images/logo-icon-only.svg" />
         </ChakraLink>
 

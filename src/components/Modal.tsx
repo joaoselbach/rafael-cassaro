@@ -10,10 +10,7 @@ import * as yup from 'yup'
 import Lottie from 'react-lottie'
 import * as animationData from '../assets/success.json'
 
-import { SolidButton } from './Buttons/SolidButton'
 import { Input } from './Input'
-import { SubmitButton } from './Buttons/SubmitButton'
-
 import { RiUser2Fill } from 'react-icons/ri'
 
 import {
@@ -22,17 +19,11 @@ import {
   ModalContent,
   ModalHeader,
   ModalCloseButton,
-  ModalBody,
-  Toast,
   Flex,
   Text,
-  Heading,
   Button,
-  Link,
-  Image,
-  Highlight
+  useToast
 } from '@chakra-ui/react'
-import { InputTest } from './InputTest'
 import { pt } from '~/locales/pt'
 
 interface ModalProps {
@@ -62,6 +53,7 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
   )
 
   const router = useRouter()
+  const toast = useToast()
   const [statusModal, setStatusModal] = useState('register')
   const [fillEmail, setFillEmail] = useState(false)
   const [fillName, setFillName] = useState(false)
@@ -104,10 +96,17 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
   useEffect(() => {
     if (data?.createCustomer) {
       if (data.createCustomer.createdAt) {
+        toast({
+          title: 'Sucesso',
+          description: 'Seu dados foram enviados com sucesso!',
+          status: 'success',
+          duration: 9000,
+          isClosable: true
+        })
         reset()
-        setStatusModal('success')
+        router.push('/obrigado')
       } else {
-        Toast({
+        toast({
           title: 'Erro.',
           description: 'Algo de errado aconteceu',
           status: 'error',
@@ -148,111 +147,73 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
             mt="1.8rem"
             textAlign="center"
           >
-            {statusModal === 'register' ? (
-              <Text fontSize="1.15rem">{t.modal.title}</Text>
-            ) : (
-              <Lottie
-                isClickToPauseDisabled
-                options={defaultOptions}
-                width="150px"
-              />
-            )}
+            <Text fontSize="1.15rem">{t.modal.title}</Text>
           </ModalHeader>
           <ModalCloseButton _hover={{ bgColor: 'gray.900' }} />
 
-          {statusModal === 'register' ? (
-            <Flex
-              as="form"
-              mb="2.5rem"
-              mt="2rem"
-              mx="1.5rem"
-              gap=".5rem"
-              flexDirection="column"
-              onSubmit={handleSubmit(handleCustomers)}
+          <Flex
+            as="form"
+            mb="2.5rem"
+            mt="2rem"
+            mx="1.5rem"
+            gap=".5rem"
+            flexDirection="column"
+            onSubmit={handleSubmit(handleCustomers)}
+          >
+            <Input
+              name="name"
+              type="text"
+              label={t.modal.register.name.label}
+              placeholder={t.modal.register.name.placeholder}
+              icon={RiUser2Fill}
+              error={errors.name}
+              {...register('name')}
+              onBlur={() => setFillName(false)}
+              onFocus={() => setFillName(true)}
+              stateIcon={fillName}
+            />
+
+            <Input
+              name="email"
+              type="email"
+              label={t.modal.register.email.label}
+              placeholder={t.modal.register.email.placeholder}
+              icon={RiUser2Fill}
+              error={errors.email}
+              {...register('email')}
+              onBlur={() => setFillEmail(false)}
+              onFocus={() => setFillEmail(true)}
+              stateIcon={fillEmail}
+            />
+
+            <Input
+              name="phone"
+              type="phone"
+              label={t.modal.register.phone.label}
+              placeholder={t.modal.register.phone.placeholder}
+              icon={RiUser2Fill}
+              error={errors.phone}
+              {...register('phone')}
+              onBlur={() => setFillPhone(false)}
+              onFocus={() => setFillPhone(true)}
+              stateIcon={fillPhone}
+            />
+
+            <Button
+              type="submit"
+              mt="1rem"
+              bgColor="gold.500"
+              fontSize="18"
+              px="7"
+              py="7"
+              _hover={{ filter: 'brightness(92%)' }}
+              _active={{ filter: 'brightness(86%)' }}
+              _focus={{ border: 'none' }}
+              isLoading={formState.isSubmitting}
             >
-              <Input
-                name="name"
-                type="text"
-                label={t.modal.register.name.label}
-                placeholder={t.modal.register.name.placeholder}
-                icon={RiUser2Fill}
-                error={errors.name}
-                {...register('name')}
-                onBlur={() => setFillName(false)}
-                onFocus={() => setFillName(true)}
-                stateIcon={fillName}
-              />
-
-              <Input
-                name="email"
-                type="email"
-                label={t.modal.register.email.label}
-                placeholder={t.modal.register.email.placeholder}
-                icon={RiUser2Fill}
-                error={errors.email}
-                {...register('email')}
-                onBlur={() => setFillEmail(false)}
-                onFocus={() => setFillEmail(true)}
-                stateIcon={fillEmail}
-              />
-
-              <Input
-                name="phone"
-                type="phone"
-                label={t.modal.register.phone.label}
-                placeholder={t.modal.register.phone.placeholder}
-                icon={RiUser2Fill}
-                error={errors.phone}
-                {...register('phone')}
-                onBlur={() => setFillPhone(false)}
-                onFocus={() => setFillPhone(true)}
-                stateIcon={fillPhone}
-              />
-
-              <Button
-                type="submit"
-                mt="1rem"
-                bgColor="gold.500"
-                fontSize="18"
-                px="7"
-                py="7"
-                _hover={{ filter: 'brightness(92%)' }}
-                _active={{ filter: 'brightness(86%)' }}
-                _focus={{ border: 'none' }}
-                isLoading={formState.isSubmitting}
-              >
-                {t.modal.register.button}
-              </Button>
-            </Flex>
-          ) : (
-            <Flex
-              justifyContent="center"
-              alignItems="center"
-              textAlign="center"
-              flexDirection="column"
-              mb="1rem"
-              p="1.5rem"
-            >
-              <Heading>{t.modal.success.title}</Heading>
-              <Text color="gray.400" mt="1rem">
-                {t.modal.success.description}
-                <br />
-                <br />
-                <Highlight query="instagram" styles={{ color: "#fff", fontWeight: 500 }}>{t.modal.success.instagram}</Highlight>
-              </Text>
-              <Link
-              href="https://www.instagram.com/rafaelcassaro/"
-                mt="1rem"
-                transition=".2 all ease"
-                _hover={{ transform: 'translateY(-2px)' }}
-              >
-                <Image w="2rem" src="/images/insta.svg" />
-              </Link>
-              <SolidButton onClick={onClose} mt="2.4rem" w="100%">
-                {t.modal.success.button}
-              </SolidButton>
-            </Flex>
-          )}
+              {t.modal.register.button}
+            </Button>
+          </Flex>
         </ModalContent>
       </ChakraModal>
     </>

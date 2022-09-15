@@ -146,7 +146,7 @@ export const es = {
     },
   success: {
     title: 'Muchas gracias',
-    description: 'Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico.',
+    description: "Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico. Ahí es donde hablaremos de lo que te quieres tatuar y procederemos con tu cita. Recuerda revisar SPAM y también otras carpetas",
     instagram: 'Sígueme también en instagram. Allí publico todos los tatuajes que hago y también el backstage de mi trabajo.',
     button: "Cerca",
   }

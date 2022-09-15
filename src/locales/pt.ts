@@ -149,7 +149,7 @@ export const pt = {
     },
     success: {
       title: 'Muito obrigado!',
-      description: 'Com certeza faremos um projeto muito bonito juntos. Por favor, verifique no seu endereço de email cadastrado se você recebeu o meu email',
+      description: 'Com certeza faremos um projeto muito bonito juntos. Por favor, verifique no seu endereço de email cadastrado se você recebeu minha mensagem. É por lá que vamos conversar sobre o que você quer tatuar e dar prosseguimento ao seu agendamento. Lembre-se de checar o SPAM e também outras pastas',
       instagram: 'Me siga também no instagram. Por lá posto todas as tatuagens que faço e também os bastidores do meu trabalho',
       button: "Fechar",
     }

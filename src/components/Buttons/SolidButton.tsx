@@ -1,26 +1,33 @@
-import { Button as ChakraButton, ButtonProps as ChakraButtonProps } from '@chakra-ui/react'
 import { ReactNode } from 'react'
+
+import {
+  Button as ChakraButton,
+  ButtonProps as ChakraButtonProps,
+  Image
+} from '@chakra-ui/react'
 
 type ButtonProps = {
   children: ReactNode
   bgColor?: string
   mt?: any
   w?: any
+  icon?: string
   maxWidth?: number
 } & ChakraButtonProps
 
 export const SolidButton = ({
   children,
-  bgColor = 'gold.500' ,
+  bgColor = 'gold.500',
   mt,
   w,
+  icon,
   maxWidth,
   ...rest
 }: ButtonProps) => {
   return (
     <ChakraButton
       gap=".5rem"
-      py={["1.8rem", "1.8rem", "1.8rem", '1.8rem', "2rem"]}
+      py={['1.8rem', '1.8rem', '1.8rem', '1.8rem', '2rem']}
       px="1.4rem"
       mt={mt}
       w={w}
@@ -37,6 +44,7 @@ export const SolidButton = ({
       _focus={{ border: 'none' }}
       {...rest}
     >
+      {icon && <Image w={["1.5rem", "2rem"]} src={icon} />}
       {children}
     </ChakraButton>
   )
