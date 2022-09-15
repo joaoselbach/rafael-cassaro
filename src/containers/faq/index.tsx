@@ -45,9 +45,7 @@ export const Faq = () => {
         <Accordion title={t.faq.idea.title}>
           {t.faq.idea.description}
         </Accordion>
-        <Accordion title={t.faq.badExperience.title}>
-          {t.faq.badExperience.description}
-        </Accordion>
+
       </VStack>
     </Flex>
   )

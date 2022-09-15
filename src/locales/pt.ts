@@ -8,7 +8,7 @@ export const pt = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'A sua nova tatuagem realista de espera.',
+    title: 'A sua nova tatuagem realista te espera.',
     description:
       'Conheça o meu trabalho e decida se eu sou o tatuador certo para você. ',
     button: 'Conheça meus trabalhos'
@@ -16,7 +16,7 @@ export const pt = {
   about: {
     title: 'Sobre mim',
     description:
-      "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Nueva Zelanda, Brasil, Europa y muchos otros lugares. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida.",
+      "Me chamo Rafael Cassaro e viajei o mundo tatuando. Já trabalhei na Nova Zelândia, Brasil, Europa e muito outros lugares. Agora estou no Stefano’s Tattoo Studio, um dos melhores estúdios da Flórida. ",
     quality: {
       title: 'Especialista em Realismo',
       description:
@@ -48,7 +48,7 @@ export const pt = {
     },
     third: {
       title: "Obra detalhada",
-      description: "Ficará feliz no lugar de ter orgulho."
+      description: "Uma tatuagem bem feita que você ficará feliz"
     }
   },
 

@@ -15,7 +15,7 @@ export const es = {
   about: {
     title: 'Sobre mi',
     description:
-      "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Nueva Zelanda, Brasil, Europa y muchos otros países. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida",
+      "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Nueva Zelanda, Brasil, Europa y muchos otros lugares. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida.",
     quality: {
       title: 'Especialista en realismo',
       description:

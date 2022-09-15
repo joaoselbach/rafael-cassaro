@@ -42,10 +42,10 @@ const Obrigado = () => {
       <Box
         backgroundImage={[
           '/images/obrigadoMobile.png',
-          '/images/bgMedium.png',
-          '/images/bgMedium.png',
-          '/images/bgMedium.png',
-          '/images/bgMedium.png',
+          '/images/bgMediumTest.png',
+          '/images/bgMediumTest.png',
+          '/images/bgMediumTest.png',
+          '/images/bgMediumTest.png',
           '/images/bg2.png'
         ]}
         backgroundSize={['cover', 'cover', 'cover', 'cover']}
