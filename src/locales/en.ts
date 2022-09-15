@@ -46,7 +46,7 @@ export const en = {
     },
     third: {
       title: "Detailed Artwork",
-      description: "You will be happy instead of being proud.",
+      description: "A well done tattoo that you will be happy to have on your skin.",
     }
   },
   testimonials: {

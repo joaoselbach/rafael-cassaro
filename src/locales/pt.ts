@@ -48,7 +48,7 @@ export const pt = {
     },
     third: {
       title: "Obra detalhada",
-      description: "Uma tatuagem bem feita que você ficará feliz"
+      description: "Uma tatuagem bem feita que você ficará feliz de ter na pele."
     }
   },
 

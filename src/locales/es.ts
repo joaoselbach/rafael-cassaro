@@ -46,7 +46,7 @@ export const es = {
     },
     third: {
       title: "Ilustraciones detalladas",
-      description: "Serás feliz en lugar de estar orgulloso."
+      description: "Un tatuaje bien hecho que estarás feliz de tener en tu piel.",
     }
   },
   testimonials: {
