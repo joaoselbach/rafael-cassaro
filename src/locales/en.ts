@@ -7,7 +7,7 @@ export const en = {
     faq: 'FAQ'
   },
   hero: {
-    title: "Tu nuevo tatuaje realista te espera.",
+    title: "Your new realistic tattoo awaits you.",
     description:
       "Meet my work and find out if I'm the right tattoo artist for you.",
     button: 'Meet my works'
