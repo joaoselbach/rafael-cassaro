@@ -1,5 +1,6 @@
 import { Benefits } from './../containers/benefits/index'
 export const pt = {
+  thankyou: "Obrigado",
   header: {
     home: 'Inicio',
     about: 'Sobre',

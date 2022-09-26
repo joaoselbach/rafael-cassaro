@@ -103,7 +103,7 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
           isClosable: true
         })
         reset()
-        router.push('/obrigado')
+        router.push('/thankyou')
       } else {
         toast({
           title: 'Erro.',

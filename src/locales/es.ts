@@ -1,4 +1,5 @@
 export const es = {
+    thankyou: "Muchas gracias",
   header: {
     home: 'Inicio',
     about: 'Sobre',

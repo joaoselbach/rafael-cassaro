@@ -1,4 +1,5 @@
 export const en = {
+  thankyou: "Thank you",
   header: {
     home: 'Home',
     about: 'About',

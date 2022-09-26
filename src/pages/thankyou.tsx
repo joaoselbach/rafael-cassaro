@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import { SolidButton } from '~/components/Buttons/SolidButton'
 import Fade from 'react-reveal/Fade'
 
-import Lottie from 'react-lottie'
 import * as animationData from '../assets/success.json'
 
 import translates from '~/locales'
@@ -18,7 +17,7 @@ import {
   Text
 } from '@chakra-ui/react'
 
-const Obrigado = () => {
+const Thankyou = () => {
   const router = useRouter()
 
   const { locale } = router
@@ -37,7 +36,7 @@ const Obrigado = () => {
   return (
     <>
       <Head>
-        <title>Rafael Cassaro - Obrigado</title>
+        <title>Rafael Cassaro - {t.thankyou}</title>
       </Head>
       <Box
         backgroundImage={[
@@ -136,4 +135,4 @@ const Obrigado = () => {
   )
 }
 
-export default Obrigado
+export default Thankyou
