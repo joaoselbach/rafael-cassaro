@@ -13,7 +13,7 @@ export const TextBoxIconBg = ({ title, children }: TextBoxIconProps) => {
       gap=".6rem"
       bgColor="gray.700"
       py="2rem"
-      px="1rem"
+      px=".75rem"
       minW={300}
       borderRadius=".5rem"
       minH={[140, 160, 170, 170, 150]}

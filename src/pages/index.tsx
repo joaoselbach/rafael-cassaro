@@ -13,6 +13,7 @@ import { Faq } from '~/containers/faq'
 import { Footer } from '~/containers/footer'
 import translates from '~/locales'
 import { useRouter } from 'next/router'
+import StudioCaroussel from '~/components/Caroussel/studio'
 
 export const Home = () => {
   const [showMap, setShowMap] = useState(false)

@@ -3,6 +3,7 @@ import { Box, Flex, Image, Text, useDisclosure, VStack } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { SolidButton } from '~/components/Buttons/SolidButton'
+import StudioCaroussel from '~/components/Caroussel/studio'
 import { Modal } from '~/components/Modal'
 import translates from '~/locales'
 
@@ -26,35 +27,10 @@ export const Location = () => {
       pt="8rem"
       px={['1rem', '1.5rem', '3rem']}
     >
-      <Flex position="relative">
-        <Image w={['100%', '60%', '60%', "80%", '100%']} src="/images/studio.png" />
-        <Box
-          position="absolute"
-          display="flex"
-          cursor="pointer"
-          borderRadius=".4rem"
-          h={showStudio === false ? '100%' : '8%'}
-          bottom="0"
-          w={['100%', '60%', '60%', '80%', '100%']}
-          mt="-1px"
-          justifyContent="center"
-          backgroundColor="#000000cf"
-          transition="0.2s all ease"
-          _hover={{ backgroundColor: '#000000b9' }}
-          onClick={() => {
-            setShowStudio(showStudio === true ? false : true)
-          }}
-        >
-          <Text
-            fontWeight={500}
-            fontSize="1rem"
-            alignSelf="center"
-            justifySelf="center"
-            color="gray.50"
-          >
-            { showStudio ? t.location.studio.close : t.location.studio.open } <ChevronRightIcon />
-          </Text>
-        </Box>
+      <Flex position="relative" justifyContent="center">
+        {/* <Image w={['100%', '60%', '60%', "80%", '100%']} src="/images/studio.png" /> */}
+        <StudioCaroussel />
+       
       </Flex>
       <VStack
         alignItems={['center', 'center', 'flex-start']}

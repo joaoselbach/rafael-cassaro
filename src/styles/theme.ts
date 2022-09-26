@@ -14,7 +14,7 @@ export const theme = extendTheme({
     },
     gold: {
       500: '#C2AD60'
-    },
+    }
   },
   fonts: {
     heading: 'Dosis',
@@ -29,7 +29,18 @@ export const theme = extendTheme({
       html: {
         scrollBehavior: 'smooth',
         webkitFontSmoothing: 'antialiased',
+        '.swiper-studio': {
+          maxWidth: '600px',
 
+          '@media (max-width: 460px)': {
+            maxWidth: '340px'
+          }
+        },
+        '.swiper-button-next:after, .swiper-button-prev:after': {
+          fontSize: '16px',
+          fontWeight: 'bold',
+          color: '#fff'
+        },
         '&::-webkit-scrollbar': {
           width: '4px'
         },

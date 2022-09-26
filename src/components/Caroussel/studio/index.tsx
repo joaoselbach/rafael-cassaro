@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Autoplay } from 'swiper'
 import { Container } from './styles'
-import { Testimonial } from '~/components/Testimonial'
 import translates from '~/locales'
 import { useRouter } from 'next/router'
 import { Studio } from '~/components/Studio'
@@ -17,31 +16,31 @@ const StudioCaroussel = () => {
 
   const elements = [
     {
-      src: '/images/studio.png'
+      src: '/images/studio-1.png'
     },
     {
-      src: '/images/studio.png'
+      src: '/images/studio-2.png'
     },
     {
-      src: '/images/studio.png'
+      src: '/images/studio-3.png'
     },
     {
-      src: '/images/studio.png'
+      src: '/images/studio-4.png'
     }
   ]
 
   return (
-    <Container>
-      <Swiper
-        slidesPerView={1}
-        autoplay={{
-          delay: 4000
-        }}
-        loop
-        // navigation={true}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
+    <Swiper
+    spaceBetween={40}
+      autoplay={{
+        delay: 4000
+      }}
+      loop
+      navigation={true}
+      modules={[Navigation]}
+      className="swiper-studio"
+    >
+      <Container>
         {elements.map(e => {
           return (
             <SwiperSlide>
@@ -49,8 +48,9 @@ const StudioCaroussel = () => {
             </SwiperSlide>
           )
         })}
-      </Swiper>
-    </Container>
+      </Container>
+
+    </Swiper>
   )
 }
 
