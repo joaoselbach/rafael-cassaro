@@ -7,19 +7,19 @@ export const en = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'Your new realistic tattoo awaits you.',
+    title: "Tu nuevo tatuaje realista te espera.",
     description:
-      "Get to know my work and discover if I'm the right tattoo artist for you.",
+      "Meet my work and find out if I'm the right tattoo artist for you.",
     button: 'Meet my works'
   },
   about: {
     title: 'About me',
     description:
-      "My name is Rafael Cassaro and I traveled the world tattooing. I've worked in New Zealand, Brazil, Europe and many other places. Now I'm at Stefano's Tattoo Studio, one of the best studios in Florida.",
+      "My name is Rafael Cassaro and I traveled the world tattooing. I have worked in Switzerland, Brazil, Europe and many other places. Now I'm at Stefano's Tattoo Studio, one of the best studios in Florida.",
     quality: {
       title: 'Realism Specialist',
       description:
-        'I do realistic pieces and my goal is to make your tattoo looks even better than you imagined it.'
+        'I do realistic tattoos and my goal is for yours to look better than you think.',
     },
     years: {
       title: '+20 years of experience',
@@ -146,7 +146,7 @@ export const en = {
     success: {
       title: 'Success!',
       description: "We will definitely make a very beautiful project together. Please check your registered email address that you have received my message. That's where we'll talk about what you want to tattoo and proceed with your appointment. Remember to check SPAM and also other folders.",
-      instagram: 'Also follow me on instagram. There I post all the tattoos I do and also the backstage of my work.',
+      instagram: 'Also follow me on Instagram! There, I post all the tattoos I do, in addition to the backstage of my work.',
     }
   },
   errorInput: {

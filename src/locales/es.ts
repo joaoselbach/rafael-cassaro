@@ -7,19 +7,19 @@ export const es = {
     faq: 'FAQ'
   },
   hero: {
-    title: 'Haz que tu tatuaje sea realista de la manera correcta.',
+    title: 'Tu nuevo tatuaje realista te espera.',
     description:
-      'Un servicio de calidad, una buena experiencia y un resultado que te dejará satisfecho. Conoce mi trabajo y decide si soy el tatuador adecuado para ti.',
+      'Conoce mi trabajo y descubre si soy el tatuador adecuado para ti.',
     button: 'Conoce mis trabajos'
   },
   about: {
     title: 'Sobre mi',
     description:
-      "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Nueva Zelanda, Brasil, Europa y muchos otros lugares. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida.",
+      "Mi nombre es Rafael Cassaro y viajé por el mundo tatuando. He trabajado en Suiza, Brasil, Europa y muchos otros lugares. Ahora estoy en Stefano's Tattoo Studio, uno de los mejores estudios de Florida.",
     quality: {
       title: 'Especialista en realismo',
       description:
-        'Realizo piezas realistas y mi objetivo es que tu tatuaje luzca aún mejor de lo que imaginabas.'
+        'Hago tatuajes realistas y mi objetivo es que el tuyo luzca mejor de lo que crees.',
     },
     years: {
       title: '+20 años de experiencia',
@@ -147,8 +147,8 @@ export const es = {
   success: {
     title: 'Muchas gracias',
     description: "Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico. Ahí es donde hablaremos de lo que te quieres tatuar y procederemos con tu cita. Recuerda revisar SPAM y también otras carpetas.",
-    instagram: 'Sígueme también en instagram. Allí publico todos los tatuajes que hago y también el backstage de mi trabajo.',
-    button: "Cerca",
+    instagram: '¡También sígueme en Instagram! Allí publico todos los tatuajes que hago, además del backstage de mi trabajo.',
+    button: "Cerrar",
   }
   },
 errorInput: {

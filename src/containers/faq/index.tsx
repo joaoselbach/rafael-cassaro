@@ -30,9 +30,6 @@ export const Faq = () => {
         {t.faq.title}
       </Text>
       <VStack mt="1rem" px="0">
-        <Accordion title={t.faq.whatHappen.title}>
-          {t.faq.whatHappen.description}
-        </Accordion>
         <Accordion title={t.faq.price.title}>
           {t.faq.price.description}
         </Accordion>
@@ -45,7 +42,6 @@ export const Faq = () => {
         <Accordion title={t.faq.idea.title}>
           {t.faq.idea.description}
         </Accordion>
-
       </VStack>
     </Flex>
   )
