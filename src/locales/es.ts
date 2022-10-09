@@ -10,7 +10,7 @@ export const es = {
   hero: {
     title: 'Tu nuevo tatuaje realista te espera.',
     description:
-      'Conoce mi trabajo y descubre si soy el tatuador adecuado para ti.',
+      'Revisa mi trabajo y descubre si soy el tatuador adecuado para ti',
     button: 'Conoce mis trabajos'
   },
   about: {

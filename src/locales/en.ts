@@ -10,22 +10,22 @@ export const en = {
   hero: {
     title: "Your new realistic tattoo awaits you.",
     description:
-      "Meet my work and find out if I'm the right tattoo artist for you.",
+      "Check my work and find out if I’m the right tattoo artist for you.",
     button: 'Meet my works'
   },
   about: {
     title: 'About me',
     description:
-      "My name is Rafael Cassaro and I traveled the world tattooing. I have worked in Switzerland, Brazil, Europe and many other places. Now I'm at Stefano's Tattoo Studio, one of the best studios in Florida.",
+      "My name is Rafael Cassaro and I have travelled the world tattooing. I have tattooed in Brazil, Switzerland, and many other European countries. Now I’m at Stefano’s Tattoo Studio, one of the best studios in Florida. ",
     quality: {
       title: 'Realism Specialist',
       description:
-        'I do realistic tattoos and my goal is for yours to look better than you think.',
+        'I make realistic tattoos and my goal is for your tattoo to look better than you have imagined.',
     },
     years: {
       title: '+20 years of experience',
       description:
-        "You're safe in the hands of a professional who knows what he is doing."
+        "You are safe in the hands of a professional who knows what he is doing."
     },
     tatto: {
       title: '+1000 tattoos done',
@@ -39,39 +39,39 @@ export const en = {
   benefits: {
     first: {
       title: "Custom Project",
-      description: "Bring me your ideas and i will help transform them into a unique, personal tattoo."
+      description: "Bring me your ideas and I will help transform them into a unique, personalised tattoo."
     },
     sec: {
       title: "Co-created Design",
-      description: "You're part of the creative process. You'll be listen to. Your opinion matters!"
+      description: "You are part of the process. You will be heard. Your opinion matters."
     },
     third: {
       title: "Detailed Artwork",
-      description: "A well done tattoo that you will be happy to have on your skin.",
+      description: "A impressive tattoo that you will be happy to have on your skin.",
     }
   },
   testimonials: {
     title: 'What they say',
     nick: "Rafael is one of the best tattoo artists I know! He was very nice and enthusiastic with my idea, the whole experience was great. I'll be back soon to get another tattoo done with him. The work he did exceeded all my expectations. I definitely recommend him!",
     andres:
-      "t was a good experience to get a tattoo with Rafael, the final design was excellent as I wanted it to be, and I thank Rafael for such an excellent job, it exceeded all my expectations. It's been a while and the piece healed super solid the color super well. Soon I'll be thinking about my new project with Rafael.",
+      "It was a good experience to get a tattoo with Rafael, the final design was excellent as I wanted it to be, and I thank Rafael for such an excellent job, it exceeded all my expectations. It's been a while and the piece healed super solid the color super well. Soon I'll be thinking about my new project with Rafael.",
     luis: "I'm eternally grateful for the quality of my tattoo, the coloring and healing were perfect! He Exceeded my expectation by 100% and has already become my official tattoo artist. I lost count of how many times I was stopped on the street and I received compliments about the tattoo, simply sensational!",
     sabrina:
-      "As soon as i was his work, i immediately fell in love with his style. I contacted him by message and he was very invested and kind from the start. This was one of the best tattoo experiences i had. He understood exactly what i was looking ofr and the tattoo was just beyond my expectations. If you're looking for a true artist, don't hesitate to contact him."
+      "As soon as i saw his work, i immediately fell in love with his style. I contacted him by message and he was very invested and kind from the start. This was one of the best tattoo experiences i had. He understood exactly what I was looking for and the tattoo was just beyond my expectations. If you're looking for a true artist, don't hesitate to contact him."
   },
   location: {
-    title: 'Where do I Work?',
+    title: 'Where i Work?',
     description:
-      "I work at Stefano's Tattoo Studio, one of the best studios in Florida. Prime location in Fort Lauderdale, right next to the beach.",
+      "I work at Stefano’s Tattoo Studio, one of the best studios in Florida. Prime location in Fort Lauderdale, near the beach.",
     confort: {
       title: 'Comfort',
       description:
-        'A first-class shop, made to make you comfortable and relaxed, even in long hours sessions.'
+        'A first-class shop, made to make you comfortable and relaxed, even in long sessions.'
     },
     professional: {
       title: 'Professional',
       description:
-        'We use only the best material and equipments there is, because you deserve the best.'
+        'We only use the best material and equipment available because you deserve the best.'
     },
     clean: {
       title: 'Clean',
@@ -95,19 +95,19 @@ export const en = {
         'After filling and submitting your data, you will receive an email with all the instructions and information you need to proceed with your project. Please check your SPAM folder, ok? Oh, and your data is 100% safe with me, ok?'
     },
     price: {
-      title: 'How much do you charge?',
+      title: 'How much is it?',
       description:
-        'Values ​​vary by project, body location and number of sessions. I need to know what and where you want to tattoo first, to give you the correct value, ok?'
+        'Prices may vary depending on project, where on the body you would like to tattoo and number of sessions. I need this information to be able to give you the correct value.'
     },
     schedule: {
-      title: 'How do I make an appointment? Do I need to pay a down payment?',
+      title: 'How do I make an appointment? Do I need to make a down payment?',
       description:
-        'The appointment is made with me, after talking by email. I ask for a $300 down payment to make sure you are committed to the project.'
+        'The appointment is made with me, after contacting me by email. There is a $300 down payment to make sure you are committed to the project.'
     },
     day: {
-      title: 'How does it work on tattoo day?',
+      title: 'How does it work on the day?',
       description:
-        'First I focus on making you as comfortable as possible. Afterwards, we finalized the last details of the artwork together. Finally, I prepare my materials, apply the decal to your skin, and then we start tattooing. I usually take a break every hour and a half, so we can rest and have a drink of water, a coffee…'
+        'Firstly, I focus on making you as comfortable as possible. After, we finalize the last details of the artwork together. Finally, I prepare my materials, apply the decal to your skin, and then we start tattooing. I usually take a break every hour and a half, so we can rest and have a drink of water, a coffee…'
     },
     hurts: {
       title: 'Does getting a tattoo hurt?',
@@ -115,9 +115,9 @@ export const en = {
         "Yes, tattooing hurts, but in most cases it's a very bearable pain. Some places naturally hurt more than others, so if the pain is too much of a problem for you, I'll help you choose a quiet spot to get tattooed."
     },
     idea: {
-      title: 'I want to get a tattoo, but I have no idea of ​​art!',
+      title: 'I want to get a tattoo, but I have no idea of ​​what!',
       description:
-        "Don't worry. During the scheduling process, we will talk a lot so that I understand who you are, what you like and what you are looking for in the project. With that, I will be able to assemble an art that will make you 100% satisfied."
+        "Don't worry. Let’s talk so I can understand who you are, what you like and what you are looking for in the project. With that, I can create an art that will make you 100% satisfied "
     },
     badExperience: {
       title:
