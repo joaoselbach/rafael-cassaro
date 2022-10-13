@@ -41,6 +41,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
+          <meta
+            name="facebook-domain-verification"
+            content="2i173yhfz60ia45rt5hdazq5es5ng5"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap"

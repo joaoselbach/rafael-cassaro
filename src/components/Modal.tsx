@@ -25,6 +25,7 @@ import {
   useToast
 } from '@chakra-ui/react'
 import { pt } from '~/locales/pt'
+import MailchimpSubscribe from 'react-mailchimp-subscribe'
 
 interface ModalProps {
   onOpen: () => void
@@ -117,13 +118,15 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
   }, [data, error])
 
   const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
-    await createCustomer({
-      variables: {
-        ...values
-      }
-    })
+    // await createCustomer({
+    //   variables: {
+    //     ...values
+    //   }
+    // })
     reset()
   }
+
+  const url = process.env.NEXT_PUBLIC_MAILCHIMP_URL
 
   return (
     <>
@@ -187,7 +190,6 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
               onFocus={() => setFillPhone(true)}
               stateIcon={fillPhone}
             />
-
             <Button
               type="submit"
               mt="1rem"
