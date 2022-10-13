@@ -119,11 +119,11 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
   }, [data, error])
 
   const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
-    // await createCustomer({
-    //   variables: {
-    //     ...values
-    //   }
-    // })
+    await createCustomer({
+      variables: {
+        ...values
+      }
+    })
     reset()
   }
 
