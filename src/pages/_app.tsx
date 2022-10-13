@@ -28,6 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <ApolloProvider client={client}>
         <ChakraProvider theme={theme}>
           <SimpleReactLightbox>
+            <Header />
             <Component {...pageProps} />
           </SimpleReactLightbox>
         </ChakraProvider>
