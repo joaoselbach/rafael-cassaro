@@ -26,6 +26,7 @@ import {
 } from '@chakra-ui/react'
 import { pt } from '~/locales/pt'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
+import { FaEnvelope, FaPhone } from 'react-icons/fa'
 
 interface ModalProps {
   onOpen: () => void
@@ -170,7 +171,7 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
               type="email"
               label={t.modal.register.email.label}
               placeholder={t.modal.register.email.placeholder}
-              icon={RiUser2Fill}
+              icon={FaEnvelope}
               error={errors.email}
               {...register('email')}
               onBlur={() => setFillEmail(false)}
@@ -183,7 +184,7 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
               type="phone"
               label={t.modal.register.phone.label}
               placeholder={t.modal.register.phone.placeholder}
-              icon={RiUser2Fill}
+              icon={FaPhone}
               error={errors.phone}
               {...register('phone')}
               onBlur={() => setFillPhone(false)}
