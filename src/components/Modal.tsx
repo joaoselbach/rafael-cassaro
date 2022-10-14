@@ -6,12 +6,13 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { gql, useMutation } from '@apollo/client'
 import * as yup from 'yup'
-
-import Lottie from 'react-lottie'
 import * as animationData from '../assets/success.json'
+import { pt } from '~/locales/pt'
 
 import { Input } from './Input'
-import { RiUser2Fill } from 'react-icons/ri'
+import { RiMessage2Fill, RiUser2Fill } from 'react-icons/ri'
+import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import { GiResize } from 'react-icons/gi'
 
 import {
   Modal as ChakraModal,
@@ -24,9 +25,7 @@ import {
   Button,
   useToast
 } from '@chakra-ui/react'
-import { pt } from '~/locales/pt'
-import MailchimpSubscribe from 'react-mailchimp-subscribe'
-import { FaEnvelope, FaPhone } from 'react-icons/fa'
+GiResize
 
 interface ModalProps {
   onOpen: () => void
@@ -38,11 +37,13 @@ type CustomerFormData = {
   name: string
   email: string
   phone: string
+  idea: string
+  size: string
 }
 
 const CREATE_CUSTOMER_MUTATION = gql`
-  mutation CreateCustomer($name: String!, $email: String!, $phone: String!) {
-    createCustomer(data: { name: $name, email: $email, phone: $phone }) {
+  mutation CreateCustomer($name: String!, $email: String!, $phone: String!, $idea: String!, $size: String!) {
+    createCustomer(data: { name: $name, email: $email, phone: $phone, idea: $idea, size: $size }) {
       name
       createdAt
     }
@@ -59,6 +60,8 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
   const [fillEmail, setFillEmail] = useState(false)
   const [fillName, setFillName] = useState(false)
   const [fillPhone, setFillPhone] = useState(false)
+  const [fillIdea, setFillidea] = useState(false)
+  const [fillSize, setFillSize] = useState(false)
 
   const { locale } = router
   const { en, es } = translates
@@ -85,7 +88,9 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
       .matches(
         /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
         t.errorInput.invalid.phone
-      )
+      ),
+    idea: yup.string().required(t.errorInput.null.idea),
+    size: yup.string().required(t.errorInput.null.size)
   })
 
   const { register, handleSubmit, formState, reset } = useForm({
@@ -191,6 +196,34 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
               onFocus={() => setFillPhone(true)}
               stateIcon={fillPhone}
             />
+
+            <Input
+              name="idea"
+              type="text"
+              label={t.modal.register.idea.label}
+              placeholder={t.modal.register.idea.placeholder}
+              icon={RiMessage2Fill}
+              error={errors.idea}
+              {...register('idea')}
+              onBlur={() => setFillidea(false)}
+              onFocus={() => setFillidea(true)}
+              stateIcon={fillIdea}
+            />
+
+            <Input
+              name="size"
+              type="text"
+              label={t.modal.register.size.label}
+              placeholder={t.modal.register.size.placeholder}
+              icon={GiResize}
+              error={errors.size}
+              {...register('size')}
+              onBlur={() => setFillSize(false)}
+              onFocus={() => setFillSize(true)}
+              stateIcon={fillSize}
+              maxLength="6"
+            />
+            
             <Button
               type="submit"
               mt="1rem"

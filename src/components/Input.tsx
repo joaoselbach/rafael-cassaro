@@ -20,11 +20,12 @@ interface InputProps extends ChakraInputProps {
   icon: any
   placeholder: string
   type: string
+  maxLength?: any
   stateIcon: boolean
 }
 
 const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
-  { name, label, icon, type, stateIcon, error = null, ...rest },
+  { name, label, maxLength, icon, type, stateIcon, error = null, ...rest },
   ref
 ) => {
   const router = useRouter()
@@ -61,6 +62,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
           name={name}
           type={type}
           bg="gray.700"
+          maxLength={maxLength}
           color="gray.50"
           fontSize="1rem"
           fontWeight="500"

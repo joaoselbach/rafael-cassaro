@@ -142,6 +142,40 @@ export const en = {
         label: 'Phone',
         placeholder: '(99) 999 99 99 99'
       },
+      idea: {
+        label: 'Describe your idea. What do you want to tattoo?',
+        placeholder: 'A landscape with..',
+      },
+      bodyPlacement: {
+        title: 'Body placement',
+        armSleeve: 'Arm sleeve',
+        upperArmOuter: 'Upper arm-outer',
+        upperArmInner: 'Upper arm-inner',
+        foreArmOuter: 'Forearm-outer',
+        foreArmInner: 'Forearm-inner',
+        hand: 'Hand',
+        backPiece: 'Full back piece',
+        neck: 'Neck',
+        fullChest: 'Full chest',
+        oneSideChest: 'One side chest',
+        Ribs: 'Ribs',
+        legSleeve: 'Leg sleeve',
+        calfSideOuter: 'Calf side-outer',
+        calfSideInner: 'Calf side-inner',
+        calfBack: 'Calf back',
+        calfFront: 'Calf front',
+        thighOuter: 'Thigh outer',
+        thighInner: 'Thigh inner',
+        thighFront: 'Thigh front',
+        thighBack: 'Thigh back',
+        wrist: 'Wrist',
+        other: 'Other',
+      },
+      references: 'Do you have any references? Upload them here. (optional)',
+      size: {
+        label: "Tattoo Size (cm/in)",
+        placeholder: "1.2in"
+      },
       button: 'Submit'
     },
     success: {
@@ -156,7 +190,9 @@ export const en = {
       email: 'E-mail required',
       company: 'Company required',
       phone: 'Phone required',
-      message: 'Message required'
+      message: 'Message required',
+      idea: 'Idea required',
+      size: 'Size required'
     },
     invalid: {
       email: 'Invalid e-mail address',

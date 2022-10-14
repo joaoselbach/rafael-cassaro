@@ -1,5 +1,5 @@
 export const es = {
-    thankyou: "Muchas gracias",
+  thankyou: "Muchas gracias",
   header: {
     home: 'Inicio',
     about: 'Sobre',
@@ -130,39 +130,75 @@ export const es = {
   modal: {
     title: "Después de completar estos campos, recibirás un correo electrónico mío para que podamos hablar sobre tu proyecto y programar tu sesión. Y tenga la seguridad de que sus datos están 100% seguros conmigo.",
     register: {
-    name: {
-      label: 'Nombre',
-      placeholder: 'Su nombre'
+      name: {
+        label: 'Nombre',
+        placeholder: 'Su nombre'
       },
-    email: {
-      label: 'Correo electrónico',
-      placeholder: 'email@email.com'
+      email: {
+        label: 'Correo electrónico',
+        placeholder: 'email@email.com'
       },
 
-    phone: {
-      label: 'Teléfono',
-      placeholder: '(99) 999 99 99 99'
+      phone: {
+        label: 'Teléfono',
+        placeholder: '(99) 999 99 99 99'
       },
-    button: 'Enviar'
+      idea: {
+        label: 'Describe tu idea. ¿Qué quieres tatuar?',
+        placeholder: 'Un paisaje con..',
+      },
+      bodyPlacement: {
+        title: 'Body placement',
+        armSleeve: 'Arm sleeve',
+        upperArmOuter: 'Upper arm-outer',
+        upperArmInner: 'Upper arm-inner',
+        foreArmOuter: 'Forearm-outer',
+        foreArmInner: 'Forearm-inner',
+        hand: 'Hand',
+        backPiece: 'Full back piece',
+        neck: 'Neck',
+        fullChest: 'Full chest',
+        oneSideChest: 'One side chest',
+        Ribs: 'Ribs',
+        legSleeve: 'Leg sleeve',
+        calfSideOuter: 'Calf side-outer',
+        calfSideInner: 'Calf side-inner',
+        calfBack: 'Calf back',
+        calfFront: 'Calf front',
+        thighOuter: 'Thigh outer',
+        thighInner: 'Thigh inner',
+        thighFront: 'Thigh front',
+        thighBack: 'Thigh back',
+        wrist: 'Wrist',
+        other: 'Other',
+      },
+      references: 'Do you have any references? Upload them here. (optional',
+      size: {
+        label: "Tamaño del tatuaje (cm/in)",
+        placeholder: "60cm"
+      },
+      button: 'Enviar'
     },
-  success: {
-    title: 'Muchas gracias',
-    description: "Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico. Ahí es donde hablaremos de lo que te quieres tatuar y procederemos con tu cita. Recuerda revisar SPAM y también otras carpetas.",
-    instagram: 'Sígueme también en Instagram. Allí publico todos los tatuajes que hago, así como el backstage de mi trabajo.',
-    button: "Cerrar",
-  }
+    success: {
+      title: 'Muchas gracias',
+      description: "Definitivamente haremos un proyecto muy hermoso juntos. Por favor, compruebe su dirección de correo electrónico registrada que ha recibido mi correo electrónico. Ahí es donde hablaremos de lo que te quieres tatuar y procederemos con tu cita. Recuerda revisar SPAM y también otras carpetas.",
+      instagram: 'Sígueme también en Instagram. Allí publico todos los tatuajes que hago, así como el backstage de mi trabajo.',
+      button: "Cerrar",
+    }
   },
-errorInput: {
-  null: {
-    name: 'Nombre requerido',
+  errorInput: {
+    null: {
+      name: 'Nombre requerido',
       email: 'Correo electrónico requerido',
-        company: 'Nombre de empresa requerido',
-          phone: 'Teléfono requirido',
-            message: 'Mensaje requerido'
-  },
-  invalid: {
-    email: 'Correo electrónico invalido',
+      company: 'Nombre de empresa requerido',
+      phone: 'Teléfono requirido',
+      message: 'Mensaje requerido',
+      idea: 'Ideia requerido',
+      size: 'Tamaño requerido'
+    },
+    invalid: {
+      email: 'Correo electrónico invalido',
       phone: 'Numero de telefono invalido'
+    }
   }
-}
 }

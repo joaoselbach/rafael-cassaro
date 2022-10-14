@@ -141,10 +141,43 @@ export const pt = {
         label: 'E-mail',
         placeholder: 'email@email.com'
       },
-
       phone: {
         label: 'Whatsapp',
         placeholder: '(99) 9999-8888'
+      },
+      idea: {
+        label: 'Descreva sua ideia. O que você quer tatuar?',
+        placeholder: 'Uma paisagem com..',
+      },
+      bodyPlacement: {
+        title: 'Body placement',
+        armSleeve: 'Arm sleeve',
+        upperArmOuter: 'Upper arm-outer',
+        upperArmInner: 'Upper arm-inner',
+        foreArmOuter: 'Forearm-outer',
+        foreArmInner: 'Forearm-inner',
+        hand: 'Hand',
+        backPiece: 'Full back piece',
+        neck: 'Neck',
+        fullChest: 'Full chest',
+        oneSideChest: 'One side chest',
+        Ribs: 'Ribs',
+        legSleeve: 'Leg sleeve',
+        calfSideOuter: 'Calf side-outer',
+        calfSideInner: 'Calf side-inner',
+        calfBack: 'Calf back',
+        calfFront: 'Calf front',
+        thighOuter: 'Thigh outer',
+        thighInner: 'Thigh inner',
+        thighFront: 'Thigh front',
+        thighBack: 'Thigh back',
+        wrist: 'Wrist',
+        other: 'Other',
+      },
+      references: 'Do you have any references? Upload them here. (optional)',
+      size: {
+        label: "Tamanho da tatuagem (cm/in)",
+        placeholder: "60cm"
       },
       button: 'Enviar'
     },
@@ -160,6 +193,8 @@ export const pt = {
       name: 'Nome obrigatório',
       email: 'E-mail obrigatório',
       phone: 'Whatsapp obrigatório',
+      idea: 'Ideia obrigatória',
+      size: 'Tamanho obrigatório'
     },
     invalid: {
       email: 'E-mail inválido',
