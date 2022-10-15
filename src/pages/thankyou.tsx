@@ -88,7 +88,7 @@ const Thankyou = () => {
             px={['.5rem', '1.5rem']}
             maxW={1000}
           >
-            <Fade delay={100} >
+            <Fade delay={100}>
               <Heading>{t.modal.success.title}</Heading>
               <Text color="gray.400" mt="1rem" fontSize={['1.05rem', '1.2rem']}>
                 <Highlight
