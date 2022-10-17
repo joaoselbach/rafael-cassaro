@@ -115,9 +115,9 @@ export const en = {
         "Yes, tattooing hurts, but in most cases it's a very bearable pain. Some places naturally hurt more than others, so if the pain is too much of a problem for you, I'll help you choose a quiet spot to get tattooed."
     },
     idea: {
-      title: 'I want to get a tattoo, but I have no idea of ​​what!',
+      title: 'I want to get a tattoo, but I have no idea of what!',
       description:
-        "Don't worry. Let’s talk so I can understand who you are, what you like and what you are looking for in the project. With that, I can create an art that will make you 100% satisfied "
+        "Don't worry. Let’s talk so I can understand who you are, what you like and what you are looking for in the project. With that, I can create an art that will make you 100% satisfied."
     },
     badExperience: {
       title:
