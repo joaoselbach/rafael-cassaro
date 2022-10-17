@@ -4,7 +4,7 @@ export const pt = {
   header: {
     home: 'Inicio',
     about: 'Sobre',
-    works: 'Trabalhos',
+    works: 'Trabalho',
     location: 'Localização',
     faq: 'FAQ'
   },
