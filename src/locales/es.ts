@@ -3,7 +3,7 @@ export const es = {
   header: {
     home: 'Inicio',
     about: 'Sobre',
-    works: 'Trabajos',
+    works: 'Trabajo',
     location: 'Localización',
     faq: 'FAQ'
   },
