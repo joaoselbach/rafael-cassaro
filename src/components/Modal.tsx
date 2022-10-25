@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import translates from '~/locales'
+import axios from 'axios'
 
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -42,8 +43,22 @@ type CustomerFormData = {
 }
 
 const CREATE_CUSTOMER_MUTATION = gql`
-  mutation CreateCustomer($name: String!, $email: String!, $phone: String!, $idea: String!, $size: String!) {
-    createCustomer(data: { name: $name, email: $email, phone: $phone, idea: $idea, size: $size }) {
+  mutation CreateCustomer(
+    $name: String!
+    $email: String!
+    $phone: String!
+    $idea: String!
+    $size: String!
+  ) {
+    createCustomer(
+      data: {
+        name: $name
+        email: $email
+        phone: $phone
+        idea: $idea
+        size: $size
+      }
+    ) {
       name
       createdAt
     }
@@ -99,9 +114,47 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
 
   const { errors } = formState
 
-  useEffect(() => {
-    if (data?.createCustomer) {
-      if (data.createCustomer.createdAt) {
+  // useEffect(() => {
+  //   if (data?.createCustomer) {
+  //     if (data.createCustomer.createdAt) {
+  //       toast({
+  //         title: 'Sucesso',
+  //         description: 'Seu dados foram enviados com sucesso!',
+  //         status: 'success',
+  //         duration: 9000,
+  //         isClosable: true
+  //       })
+  //       reset()
+  //       router.push('/thankyou')
+  //     } else {
+  //       toast({
+  //         title: 'Erro.',
+  //         description: 'Algo de errado aconteceu',
+  //         status: 'error',
+  //         duration: 9000,
+  //         isClosable: true
+  //       })
+  //     }
+  //   }
+  // }, [data, error])
+
+  const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
+    console.log(values.size)
+
+    let config = {
+      method: 'post',
+      url: 'api/contact',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: values
+    }
+
+    try {
+      const response = await axios(config)
+      console.log(response)
+      if (response.status == 200) {
+        reset()
         toast({
           title: 'Sucesso',
           description: 'Seu dados foram enviados com sucesso!',
@@ -109,30 +162,11 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
           duration: 9000,
           isClosable: true
         })
-        reset()
-        router.push('/thankyou')
-      } else {
-        toast({
-          title: 'Erro.',
-          description: 'Algo de errado aconteceu',
-          status: 'error',
-          duration: 9000,
-          isClosable: true
-        })
+         router.push('/thankyou')
       }
-    }
-  }, [data, error])
-
-  const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
-    await createCustomer({
-      variables: {
-        ...values
-      }
-    })
+    } catch (err) {}
     reset()
   }
-
-  const url = process.env.NEXT_PUBLIC_MAILCHIMP_URL
 
   return (
     <>
@@ -223,7 +257,7 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
               stateIcon={fillSize}
               maxLength="6"
             />
-            
+
             <Button
               type="submit"
               mt="1rem"

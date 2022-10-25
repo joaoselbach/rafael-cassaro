@@ -24,7 +24,7 @@ export const Studio = ({ src }: StudioProps) => {
         position="absolute"
         display="flex"
         cursor="pointer"
-        borderRadius="2rem"
+        borderRadius={showStudio === false ? "2rem" : "0 0 2rem 2rem"}
         left={["0%", "10%", "10%", "10%"]}
         h={showStudio === false ? '100%' : '8%'}
         bottom="0"

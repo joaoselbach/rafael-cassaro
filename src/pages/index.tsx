@@ -13,7 +13,6 @@ import { Faq } from '~/containers/faq'
 import { Footer } from '~/containers/footer'
 import translates from '~/locales'
 import { useRouter } from 'next/router'
-import StudioCaroussel from '~/components/Caroussel/studio'
 
 export const Home = () => {
   const [showMap, setShowMap] = useState(false)
@@ -55,7 +54,9 @@ export const Home = () => {
           <Testimonials />
           <Location />
         </Box>
-        <Box mt="8rem" w="100%" position="relative">
+        <Box mt="8rem" w="100%" position="relative" 
+        
+        >
           <Box
             position="absolute"
             display="flex"
@@ -63,13 +64,13 @@ export const Home = () => {
             cursor="pointer"
             h={showMap === false ? '100%' : '12%'}
             w="100%"
-            mt="-1px"
+            mt="1px"
             justifyContent="center"
             backgroundColor="#000000cf"
             transition="0.2s all ease"
             _hover={{ backgroundColor: '#000000b9' }}
             onClick={() => {
-              setShowMap((showMap === true ? false : true))
+              setShowMap((showMap ? false : true))
             }}
           >
             <Text
