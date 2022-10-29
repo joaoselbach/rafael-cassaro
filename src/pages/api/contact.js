@@ -32,7 +32,7 @@ export default (req, res) => {
   try {
     const emailRes = transporter.sendMail({
       from: 'cassaro.booking@hotmail.com',
-      to: 'joao.selbach@hotmail.com',
+      to: 'contato.rafaelcassaro@gmail.com',
       subject: `Contact form submission from ${name}`,
       html: `<h2>You have a new contact form submission</h2>
       <p><strong>Name: </strong> ${name} <br>
