@@ -52,12 +52,6 @@ export default (req, res) => {
         <p>I want to dedicate a lot of attention to your project, so I ask for at least <strong>48 hours</strong> to get back to you, ok?</p>
         <p>I will send you an email thru <strong>contato.rafaelcassaro@gmail.com</strong> to talk more about your tattoo, answer all your questions, and schedule your session, so keep an eye out (and if you don't see it, check your spam folder).</p>
         <p>Thank you very much, and see you soon.</p>`,
-        attachments: [
-          {   // use URL as an attachment
-            filename: 'license.txt',
-            path: 'https://raw.github.com/andris9/Nodemailer/master/LICENSE'
-          },
-        ]
       });
     } catch (err) {
       console.log(err);
