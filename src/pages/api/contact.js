@@ -1,9 +1,22 @@
 import nodemailer from 'nodemailer';
 
-export default async (req, res) => {
+const transporter = nodemailer.createTransport({
+  host: "smtp-mail.outlook.com", // hostname
+  secureConnection: false, // TLS requires secureConnection to be false
+  port: 587, // port for secure SMTP
+  tls: {
+    ciphers: 'SSLv3'
+  },
+  auth: {
+    user: 'cassaro.booking@hotmail.com',
+    pass: 'Tattoo2022*'
+  }
+});
+
+export default (req, res) => {
   const { name, email, phone, idea, size } = req.body;
 
-  var transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com", // hostname
     secureConnection: false, // TLS requires secureConnection to be false
     port: 587, // port for secure SMTP
@@ -17,9 +30,9 @@ export default async (req, res) => {
   });
 
   try {
-    const emailRes = await transporter.sendMail({
+    const emailRes = transporter.sendMail({
       from: 'cassaro.booking@hotmail.com',
-      to: 'contato.rafaelcassaro@gmail.com',
+      to: 'joao.selbach@hotmail.com',
       subject: `Contact form submission from ${name}`,
       html: `<h2>You have a new contact form submission</h2>
       <p><strong>Name: </strong> ${name} <br>
@@ -31,7 +44,7 @@ export default async (req, res) => {
     });
 
     try {
-      const emailRes = await transporter.sendMail({
+      const emailRes = transporter.sendMail({
         from: "cassaro.booking@hotmail.com",
         to: email,
         subject: `${name} your booking request has been received! Open for next steps.`,
