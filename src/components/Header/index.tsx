@@ -18,6 +18,7 @@ import {
   useBreakpointValue,
   useDisclosure
 } from '@chakra-ui/react'
+import { NavIcons } from './test'
 
 export const Header = () => {
   const router = useRouter()
@@ -75,7 +76,7 @@ export const Header = () => {
               fontWeight="400"
               fontSize=".95rem"
             >
-              <Link href="#home">{t.header.home}</Link>
+              <Link href="/">{t.header.home}</Link>
               <Link href="#about">{t.header.about}</Link>
               <Link href="#works">{t.header.works}</Link>
               <Link href="#location">{t.header.location}</Link>

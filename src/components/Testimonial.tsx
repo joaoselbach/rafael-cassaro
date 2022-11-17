@@ -13,7 +13,7 @@ export const Testimonial = ({ description, name, src }: TestimonialProps) => {
       justifyContent="space-between"
       p={["1.2rem", "2rem"]}
       maxW={400}
-      minH={428}
+      minH={450}
       gap="2rem"
       borderRadius="1rem"
       bgColor="gray.700"

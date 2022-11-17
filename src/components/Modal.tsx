@@ -26,6 +26,7 @@ import {
   Button,
   useToast
 } from '@chakra-ui/react'
+import { number } from 'yup/lib/locale'
 GiResize
 
 interface ModalProps {
@@ -84,7 +85,7 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
 
   const defaultOptions = {
     loop: false,
-    autoplay: true,
+    autoplay: true, 
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
@@ -138,23 +139,10 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
   //   }
   // }, [data, error])
 
-  const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
-    console.log(values.size)
 
-    let config = {
-      method: 'post',
-      url: 'api/contact',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      data: values
-    }
-
-    try {
-      const response = await axios(config)
-      console.log(response)
-      if (response.status == 200) {
-        reset()
+  useEffect(() => {
+    if (data?.createCustomer) {
+      if (data.createCustomer.createdAt) {
         toast({
           title: 'Sucesso',
           description: 'Seu dados foram enviados com sucesso!',
@@ -162,11 +150,54 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
           duration: 9000,
           isClosable: true
         })
-         router.push('/thankyou')
+        reset()
+        router.push('/thankyou')
+      } else {
+        toast({
+          title: 'Erro.',
+          description: 'Algo de errado aconteceu',
+          status: 'error',
+          duration: 9000,
+          isClosable: true
+        })
       }
-    } catch (err) {}
+    }
+  }, [data, error])
+
+  const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
+    await createCustomer({
+      variables: {
+        ...values
+      }
+    })
     reset()
   }
+
+    // let config = {
+    //   method: 'post',
+    //   url: 'api/contact',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   data: values
+    // }
+
+    // try {
+    //   const response = await axios(config)
+    //   console.log(response)
+    //   if (response.status == 200) {
+    //     reset()
+    //     toast({
+    //       title: 'Sucesso',
+    //       description: 'Seu dados foram enviados com sucesso!',
+    //       status: 'success',
+    //       duration: 9000,
+    //       isClosable: true
+    //     })
+    //      router.push('/thankyou')
+    //   }
+    // } catch (err) {}
+    // reset()
 
   return (
     <>
