@@ -21,8 +21,8 @@ export default (req, res) => {
     secureConnection: false, // TLS requires secureConnection to be false
     port: 587, // port for secure SMTP
     auth: {
-      user: 'cassaro.booking@hotmail.com',
-      pass: 'Tattoo2022*'
+      user: process.env.NEXT_PUBLIC_USER,
+      pass: process.env.NEXT_PUBLIC_PASSWORD
     }
   });
 
@@ -43,7 +43,8 @@ export default (req, res) => {
     try {
       const emailRes = transporter.sendMail({
         from: "cassaro.booking@hotmail.com",
-        to: email,
+        to: "cassaro.booking@hotmail.com",
+        bcc: email,
         subject: `${name} your booking request has been received! Open for next steps.`,
         html: `<p><strong>${name}</strong>, your booking request has been received. Thank you for your interest in my work. I'm sure we'll make a masterpiece together.</p>
         <p>I want to dedicate a lot of attention to your project, so I ask for at least <strong>48 hours</strong> to get back to you, ok?</p>

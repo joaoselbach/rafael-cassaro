@@ -171,33 +171,34 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
       }
     })
     reset()
+
+    let config = {
+      method: 'post',
+      url: 'api/contact',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: values
+    }
+
+    try {
+      const response = await axios(config)
+      console.log(response)
+      if (response.status == 200) {
+        reset()
+        toast({
+          title: 'Sucesso',
+          description: 'Seu dados foram enviados com sucesso!',
+          status: 'success',
+          duration: 9000,
+          isClosable: true
+        })
+         router.push('/thankyou')
+      }
+    } catch (err) {}
   }
 
-    // let config = {
-    //   method: 'post',
-    //   url: 'api/contact',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   data: values
-    // }
-
-    // try {
-    //   const response = await axios(config)
-    //   console.log(response)
-    //   if (response.status == 200) {
-    //     reset()
-    //     toast({
-    //       title: 'Sucesso',
-    //       description: 'Seu dados foram enviados com sucesso!',
-    //       status: 'success',
-    //       duration: 9000,
-    //       isClosable: true
-    //     })
-    //      router.push('/thankyou')
-    //   }
-    // } catch (err) {}
-    // reset()
+    
 
   return (
     <>
