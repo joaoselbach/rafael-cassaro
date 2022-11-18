@@ -139,31 +139,6 @@ export const Modal = ({ onOpen, isOpen, onClose }: ModalProps) => {
   //   }
   // }, [data, error])
 
-
-  useEffect(() => {
-    if (data?.createCustomer) {
-      if (data.createCustomer.createdAt) {
-        toast({
-          title: 'Sucesso',
-          description: 'Seu dados foram enviados com sucesso!',
-          status: 'success',
-          duration: 9000,
-          isClosable: true
-        })
-        reset()
-        router.push('/thankyou')
-      } else {
-        toast({
-          title: 'Erro.',
-          description: 'Algo de errado aconteceu',
-          status: 'error',
-          duration: 9000,
-          isClosable: true
-        })
-      }
-    }
-  }, [data, error])
-
   const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
     await createCustomer({
       variables: {
