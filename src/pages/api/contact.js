@@ -31,18 +31,18 @@ export default (req, res) => {
   } catch (err) {
     console.log(err);
   }
-  try {
-    const emailRes = transporter.sendMail({
-      from: "cassaro.booking@hotmail.com",
-      to: email,
-      subject: `${name} your booking request has been received! Open for next steps.`,
-      html: `<p><strong>${name}</strong>, your booking request has been received. Thank you for your interest in my work. I'm sure we'll make a masterpiece together.</p>
-      <p>I want to dedicate a lot of attention to your project, so I ask for at least <strong>48 hours</strong> to get back to you, ok?</p>
-      <p>I will send you an email thru <strong>contato.rafaelcassaro@gmail.com</strong> to talk more about your tattoo, answer all your questions, and schedule your session, so keep an eye out (and if you don't see it, check your spam folder).</p>
-      <p>Thank you very much, and see you soon.</p>`,
-    });
-  } catch (err) {
-    console.log(err);
-  }
+  // try {
+  //   const emailRes = transporter.sendMail({
+  //     from: "cassaro.booking@hotmail.com",
+  //     to: email,
+  //     subject: `${name} your booking request has been received! Open for next steps.`,
+  //     html: `<p><strong>${name}</strong>, your booking request has been received. Thank you for your interest in my work. I'm sure we'll make a masterpiece together.</p>
+  //     <p>I want to dedicate a lot of attention to your project, so I ask for at least <strong>48 hours</strong> to get back to you, ok?</p>
+  //     <p>I will send you an email thru <strong>contato.rafaelcassaro@gmail.com</strong> to talk more about your tattoo, answer all your questions, and schedule your session, so keep an eye out (and if you don't see it, check your spam folder).</p>
+  //     <p>Thank you very much, and see you soon.</p>`,
+  //   });
+  // } catch (err) {
+  //   console.log(err);
+  // }
   res.status(200).json(req.body);
 };
