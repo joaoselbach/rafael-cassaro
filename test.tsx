@@ -102,34 +102,50 @@ export const Modal = ({
     }
   }
 
-  const customerFormSchema = yup.object().shape({
-    name: yup.string().required(t.errorInput.null.name),
-    email: yup
-      .string()
-      .required(t.errorInput.null.email)
-      .email(t.errorInput.invalid.email),
-    phone: yup
-      .string()
-      .required(t.errorInput.null.phone)
-      .matches(
-        /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-        t.errorInput.invalid.phone
-      ),
-    idea: yup.string().required(t.errorInput.null.idea),
-    size: yup.string().required(t.errorInput.null.size)
-  })
+  let email, name, phone, idea, size
+  const submit = () =>
+    email &&
+    name &&
+    phone &&
+    idea &&
+    size &&
+    email.value.indexOf('@') > -1 &&
+    onValidated({
+      EMAIL: email.value,
+      NAME: name.value,
+      PHONE: phone.value,
+      IDEA: idea.value,
+      SIZE: size.value
+    })
 
-  const { register, handleSubmit, formState, reset } = useForm({
-    resolver: yupResolver(customerFormSchema)
-  })
+  // const customerFormSchema = yup.object().shape({
+  //   name: yup.string().required(t.errorInput.null.name),
+  //   email: yup
+  //     .string()
+  //     .required(t.errorInput.null.email)
+  //     .email(t.errorInput.invalid.email),
+  //   phone: yup
+  //     .string()
+  //     .required(t.errorInput.null.phone)
+  //     .matches(
+  //       /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+  //       t.errorInput.invalid.phone
+  //     ),
+  //   idea: yup.string().required(t.errorInput.null.idea),
+  //   size: yup.string().required(t.errorInput.null.size)
+  // })
 
-  const { errors } = formState
+  // const { register, handleSubmit, formState, reset } = useForm({
+  //   resolver: yupResolver(customerFormSchema)
+  // })
+
+  // const { errors } = formState
 
   useEffect(() => {
     if (status === 'success') {
       toast({
-        title: t.modal.successMessage.title,
-        description: t.modal.successMessage.description,
+        title: 'Sucesso',
+        description: 'Seu dados foram enviados com sucesso!',
         status: 'success',
         duration: 9000,
         isClosable: true
@@ -139,7 +155,7 @@ export const Modal = ({
     } else if (status === 'error') {
       toast({
         title: 'Erro.',
-        description: message,
+        description: 'Algo de errado aconteceu',
         status: 'error',
         duration: 9000,
         isClosable: true
@@ -147,16 +163,39 @@ export const Modal = ({
     }
   }, [status])
 
-  let email, name, phone, idea, size
-  const submit: SubmitHandler<CustomerFormData> = async values => {
-    await onValidated({
-      EMAIL: values.email,
-      NAME: values.name,
-      PHONE: values.phone,
-      IDEA: values.idea,
-      SIZE: values.size
-    })
-  }
+  // const handleCustomers: SubmitHandler<CustomerFormData> = async values => {
+  //   await createCustomer({
+  //     variables: {
+  //       ...values
+  //     }
+  //   })
+  //   reset()
+
+  //   let config = {
+  //     method: 'post',
+  //     url: 'api/contact',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     data: values
+  //   }
+
+  //   try {
+  //     const response = await axios(config)
+  //     console.log(response)
+  //     if (response.status == 200) {
+  //       reset()
+  //       toast({
+  //         title: 'Sucesso',
+  //         description: 'Seu dados foram enviados com sucesso!',
+  //         status: 'success',
+  //         duration: 9000,
+  //         isClosable: true
+  //       })
+  //        router.push('/thankyou')
+  //     }
+  //   } catch (err) {}
+  // }
 
   return (
     <>
@@ -174,13 +213,13 @@ export const Modal = ({
           <ModalCloseButton _hover={{ bgColor: 'gray.900' }} />
 
           <Flex
-            as="form"
+            // as="form"
             mb="2.5rem"
             mt="2rem"
             mx="1.5rem"
             gap=".5rem"
             flexDirection="column"
-            onSubmit={handleSubmit(submit)}
+            // onSubmit={handleSubmit(submit)}
           >
             <Input
               name="name"
@@ -189,8 +228,8 @@ export const Modal = ({
               label={t.modal.register.name.label}
               placeholder={t.modal.register.name.placeholder}
               icon={RiUser2Fill}
-              error={errors.name}
-              {...register('name')}
+              // error={errors.name}
+              // {...register('name')}
               onBlur={() => setFillName(false)}
               onFocus={() => setFillName(true)}
               stateIcon={fillName}
@@ -203,8 +242,8 @@ export const Modal = ({
               label={t.modal.register.email.label}
               placeholder={t.modal.register.email.placeholder}
               icon={FaEnvelope}
-              error={errors.email}
-              {...register('email')}
+              // error={errors.email}
+              // {...register('email')}
               onBlur={() => setFillEmail(false)}
               onFocus={() => setFillEmail(true)}
               stateIcon={fillEmail}
@@ -217,8 +256,8 @@ export const Modal = ({
               label={t.modal.register.phone.label}
               placeholder={t.modal.register.phone.placeholder}
               icon={FaPhone}
-              error={errors.phone}
-              {...register('phone')}
+              // error={errors.phone}
+              // {...register('phone')}
               onBlur={() => setFillPhone(false)}
               onFocus={() => setFillPhone(true)}
               stateIcon={fillPhone}
@@ -231,8 +270,8 @@ export const Modal = ({
               label={t.modal.register.idea.label}
               placeholder={t.modal.register.idea.placeholder}
               icon={RiMessage2Fill}
-              error={errors.idea}
-              {...register('idea')}
+              // error={errors.idea}
+              // {...register('idea')}
               onBlur={() => setFillidea(false)}
               onFocus={() => setFillidea(true)}
               stateIcon={fillIdea}
@@ -245,8 +284,8 @@ export const Modal = ({
               label={t.modal.register.size.label}
               placeholder={t.modal.register.size.placeholder}
               icon={GiResize}
-              error={errors.size}
-              {...register('size')}
+              // error={errors.size}
+              // {...register('size')}
               onBlur={() => setFillSize(false)}
               onFocus={() => setFillSize(true)}
               stateIcon={fillSize}
@@ -264,6 +303,7 @@ export const Modal = ({
               _active={{ filter: 'brightness(86%)' }}
               _focus={{ border: 'none' }}
               isLoading={status === 'sending'}
+              onClick={submit}
             >
               {t.modal.register.button}
             </Button>

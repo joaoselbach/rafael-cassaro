@@ -186,6 +186,10 @@ export const pt = {
       description: 'Com certeza faremos um projeto muito bonito juntos. Por favor, verifique no seu endereço de email cadastrado se você recebeu minha mensagem. É por lá que vamos conversar sobre o que você quer tatuar e dar prosseguimento ao seu agendamento. Lembre-se de checar o SPAM e também outras pastas.',
       instagram: 'Me siga também no Instagram! Por lá, posto todas as tatuagens que faço, além dos bastidores do meu trabalho.',
       button: "Fechar",
+    },
+    successMessage: {
+      title: 'Sucesso',
+      description: 'Seus dados foram enviados com sucesso.',
     }
   },
   errorInput: {

@@ -61,6 +61,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
         <ChakraInput
           name={name}
           type={type}
+          required
           bg="gray.700"
           maxLength={maxLength}
           color="gray.50"

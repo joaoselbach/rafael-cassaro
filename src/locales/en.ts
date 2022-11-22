@@ -182,6 +182,10 @@ export const en = {
       title: 'Success!',
       description: "We will definitely make a very beautiful project together. Please check your registered email address that you have received my message. That's where we'll talk about what you want to tattoo and proceed with your appointment. Remember to check SPAM and also other folders.",
       instagram: 'Also follow me on Instagram. There I post all the tattoos I make, as well as the backstage of my work',
+    },
+    successMessage: {
+      title: 'Success',
+      description: 'Your data has been successfully sent.'
     }
   },
   errorInput: {

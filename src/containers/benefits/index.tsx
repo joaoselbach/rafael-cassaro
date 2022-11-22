@@ -1,5 +1,6 @@
 import { Flex, useDisclosure } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
+import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import { SolidButton } from '~/components/Buttons/SolidButton'
 import { Modal } from '~/components/Modal'
 import { TextBoxIconBg } from '~/components/TextBoxIconBg'
@@ -9,6 +10,10 @@ export const Benefits = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const router = useRouter()
 
+  const url =
+    'https://rafaelcassaro.us14.list-manage.com/subscribe/post?u=756d29b82d10ce1242f31a667&amp;id=0b2b283b93&amp;f_id=002385e0f0'
+
+ 
   const { locale } = router
   const { en, es, pt } = translates
   const t = locale === 'es' ? es : locale === 'en' ? en : pt
@@ -45,7 +50,19 @@ export const Benefits = () => {
       <SolidButton w={['100%', '80%', '45%']} mt="4rem" onClick={onOpen}>
         {t.buttonContact}
       </SolidButton>
-      <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
+      <MailchimpSubscribe
+        url={url}
+        render={({ subscribe, status, message }) => (
+          <Modal
+            isOpen={isOpen}
+            onClose={onClose}
+            onOpen={onOpen}
+            status={status}
+            message={message}
+            onValidated={formData => subscribe(formData)}
+          />
+        )}
+      />
     </Flex>
   )
 }

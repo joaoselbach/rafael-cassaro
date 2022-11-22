@@ -2,6 +2,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Box, Flex, Image, Text, useDisclosure, VStack } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import { SolidButton } from '~/components/Buttons/SolidButton'
 import StudioCaroussel from '~/components/Caroussel/studio'
 import { Modal } from '~/components/Modal'
@@ -10,12 +11,13 @@ import translates from '~/locales'
 export const Location = () => {
   const router = useRouter()
   const { isOpen, onOpen, onClose } = useDisclosure()
-
   const [showStudio, setShowStudio] = useState(false)
-
   const { locale } = router
   const { en, es, pt } = translates
   const t = locale === 'es' ? es : locale === 'en' ? en : pt
+
+  const url =
+    'https://rafaelcassaro.us14.list-manage.com/subscribe/post?u=756d29b82d10ce1242f31a667&amp;id=0b2b283b93&amp;f_id=002385e0f0'
 
   return (
     <Flex
@@ -30,7 +32,6 @@ export const Location = () => {
       <Flex position="relative" justifyContent="center">
         {/* <Image w={['100%', '60%', '60%', "80%", '100%']} src="/images/studio.png" /> */}
         <StudioCaroussel />
-       
       </Flex>
       <VStack
         alignItems={['center', 'center', 'flex-start']}
@@ -109,13 +110,28 @@ export const Location = () => {
           >
             {t.location.clean.description}
           </Text>
-          <SolidButton w={['100%', '100%', '100%']} mt="2.5rem" onClick={onOpen}>
-        {t.buttonContact}
-      </SolidButton>
-      <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
+          <SolidButton
+            w={['100%', '100%', '100%']}
+            mt="2.5rem"
+            onClick={onOpen}
+          >
+            {t.buttonContact}
+          </SolidButton>
+          <MailchimpSubscribe
+            url={url}
+            render={({ subscribe, status, message }) => (
+              <Modal
+                isOpen={isOpen}
+                onClose={onClose}
+                onOpen={onOpen}
+                status={status}
+                message={message}
+                onValidated={formData => subscribe(formData)}
+              />
+            )}
+          />
         </Flex>
       </VStack>
-
     </Flex>
   )
 }
