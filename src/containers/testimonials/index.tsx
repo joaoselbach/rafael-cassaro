@@ -3,8 +3,6 @@ import TestimonialCaroussel from '~/components/Caroussel/testimonial'
 import { Flex, Text, useDisclosure } from '@chakra-ui/react'
 import translates from '~/locales'
 import { useRouter } from 'next/router'
-import { SolidButton } from '~/components/Buttons/SolidButton'
-import { Modal } from '~/components/Modal'
 
 export const Testimonials = () => {
   const router = useRouter()

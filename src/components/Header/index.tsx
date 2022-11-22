@@ -18,7 +18,6 @@ import {
   useBreakpointValue,
   useDisclosure
 } from '@chakra-ui/react'
-import { NavIcons } from './test'
 
 export const Header = () => {
   const router = useRouter()

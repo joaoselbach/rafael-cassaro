@@ -189,7 +189,7 @@ export const pt = {
     },
     successMessage: {
       title: 'Sucesso',
-      description: 'Seus dados foram enviados com sucesso.',
+      description: 'Seus dados foram enviados com sucesso',
     }
   },
   errorInput: {
